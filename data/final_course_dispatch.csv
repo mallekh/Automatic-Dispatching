@@ -1,0 +1,1694 @@
+Course_ID,Passenger,Pickup_Location,Dropoff_Location,Hour,Weekday,Month,Original_TAXI
+0,Wael Thabet,Mousqué Errawdha,lac3,10,4,1,7444.0
+0,Amel,zahrouni,lac3,10,4,1,1615.0
+1,Yousra Houiji,cité bennacer manouba,lac3,10,0,1,7830.0
+1,MANSOURI ZOUHAYRA,ariana batoire kiosque shell,lac3,10,0,1,
+1,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,0,1,8375.0
+1,Beni henriette,Bhar lazrek,lac3,10,0,1,
+2,Djossou Rogel,Nour Jaafer,lac3,10,0,1,7444.0
+2,Mariem Rahali,Nacer 2,lac3,10,0,1,
+2,Ebata Freud,Nkhlilette,lac3,10,0,1,
+2,Rezgui Mounir,Rades melyene,lac3,10,0,1,5696.0
+3,Amel,Ezzahrouni,lac3,10,0,1,
+3,Ayari Imen,Jaafer,lac3,10,0,1,
+4,MANSOURI ZOUHAYRA,lac3,ariana batoire kiosque shell,19,0,1,7830.0
+4,Yousra Houiji,lac3,cité bennacer manouba,19,0,1,
+4,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,0,1,5696.0
+4,Beni henriette,lac3,Bhar lazrek,19,0,1,7212.0
+5,EMNA SOUMER,kheireddine (kram),lac3,10,1,1,
+5,Ayari Imen,Jaafer,lac3,10,1,1,
+5,Amel,Ezzahrouni,lac3,10,1,1,
+5,BILEL RAHMOUNI,hedi nouira (borj louzir),lac3,10,1,1,7444.0
+6,Djossou Rogel,Nour Jaafer,lac3,10,1,1,
+6,Mariem Rahali,Nacer 2,lac3,10,1,1,10568.0
+6,MEHDI KHAIRALLAH,omrane superieur,lac3,10,1,1,
+6,Ebata Freud,Nkhlilette,lac3,10,1,1,
+7,Yousra Houiji,cité bennacer manouba,lac3,10,1,1,461.0
+7,ghofrane bouazizi,Beb lassal,lac3,10,1,1,
+7,Malek ben arous,Bhar lazrek,lac3,10,1,1,
+7,Beni henriette,Bhar lazrek,lac3,10,1,1,
+8,WISSEM NAMOUCHI,lac3,Menzeh 7,19,1,1,
+8,claude noah,lac3,menzeh 5 café jardin,19,1,1,
+8,Ayari Imen,lac3,Jaafer,19,1,1,
+8,EMNA SOUMER,lac3,kheireddine (kram),19,1,1,
+9,Mariem Rahali,Nacer 2,lac3,10,2,1,10568.0
+9,MEHDI KHAIRALLAH,omrane superieur,lac3,10,2,1,
+9,Djossou Rogel,Nour Jaafer,lac3,10,2,1,
+9,Ebata Freud,Nkhlilette,lac3,10,2,1,
+10,Amel,Ezzahrouni,lac3,10,2,1,
+10,Ayari Imen,Jaafer,lac3,10,2,1,
+10,EMNA SOUMER,kheireddine (kram),lac3,10,2,1,
+10,BILEL RAHMOUNI,hedi nouira (borj louzir),lac3,10,2,1,7444.0
+11,Yousra Houiji,cité bennacer manouba,lac3,10,2,1,461.0
+11,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,2,1,
+11,Malek ben arous,Bhar lazrek,lac3,10,2,1,
+11,Beni henriette,Bhar lazrek,lac3,10,2,1,1042.0
+12,EMNA SOUMER,lac3,kheireddine (kram),19,2,1,
+12,MARWEN NASER,lac3,FOUCHENA,19,2,1,3744.0
+12,BILEL RAHMOUNI,lac3,hedi nouira (borj louzir),19,2,1,
+12,Ayari Imen,lac3,Jaafer,19,2,1,
+13,Mariem Rahali,Nacer 2,lac3,10,3,1,
+13,Ebata Freud,Nkhlilette,lac3,10,3,1,
+13,Djossou Rogel,Nour Jaafer,lac3,10,3,1,7444.0
+13,MEHDI KHAIRALLAH,omrane superieur,lac3,10,3,1,
+14,Amel,Ezzahrouni,lac3,10,3,1,461.0
+14,Ayari Imen,Jaafer,lac3,10,3,1,
+14,BILEL RAHMOUNI,hedi nouira (borj louzir),lac3,10,3,1,
+14,MARWEN NASER,FOUCHENA,lac3,10,3,1,7830.0
+15,Beni henriette,Bhar lazrek,lac3,10,3,1,
+15,Malek ben arous,Bhar lazrek,lac3,10,3,1,
+15,Yousra Houiji,cité bennacer manouba,lac3,10,3,1,
+15,HEND AJEJ,Bhar lazrek,lac3,10,3,1,
+16,MARWEN NASER,lac3,FOUCHENA,19,3,1,3744.0
+16,KHAWLA JERBI,lac3,Géant,19,3,1,10568.0
+16,Ayari Imen,lac3,Jaafer,19,3,1,
+16,BILEL RAHMOUNI,lac3,hedi nouira (borj louzir),19,3,1,
+17,EMNA SOUMER,kheireddine (kram),lac3,10,4,1,
+17,Amel,Ezzahrouni,lac3,10,4,1,461.0
+17,BILEL RAHMOUNI,hedi nouira (borj louzir),lac3,10,4,1,
+17,MARWEN NASER,FOUCHENA,lac3,10,4,1,7830.0
+18,Mariem Rahali,Nacer 2,lac3,10,4,1,
+18,Ebata Freud,Nkhlilette,lac3,10,4,1,
+18,Yosr Najjar,Mousqué Errawdha,lac3,10,4,1,7212.0
+18,Djossou Rogel,Nour Jaafer,lac3,10,4,1,7444.0
+19,HEND AJEJ,Bhar lazrek,lac3,10,4,1,1042.0
+19,NUMBI NAAY FEARISS,Cité el mile7a,lac3,10,4,1,
+19,Yousra Houiji,cité bennacer manouba,lac3,10,4,1,
+19,Beni henriette,Bhar lazrek,lac3,10,4,1,
+20,KHAWLA JERBI,lac3,Géant,19,4,1,10568.0
+20,BILEL RAHMOUNI,lac3,hedi nouira (borj louzir),19,4,1,
+20,EMNA SOUMER,lac3,kheireddine (kram),19,4,1,
+20,Ayari Imen,lac3,Jaafer,19,4,1,10050.0
+21,Soumhir Kerit,Hafsia Rue Tronja,lac3,10,0,1,1941.0
+21,Ayari Imen,Jaafer,lac3,10,0,1,1203.0
+21,Marwa Said,Ibn Mandhour Ariana,lac3,10,0,1,1853.0
+21,Mahmoud Soulaima,Ibn Mandhour Ariana,lac3,10,0,1,
+22,Eya Arafoui,Mourouj 4,lac3,10,0,1,
+22,Youssef ayachi,Mousqué Errawdha,lac3,10,0,1,
+22,Wael Thabet,Mousqué Errawdha,lac3,10,0,1,7212.0
+22,Djossou Rogel,Nour Jaafer,lac3,10,0,1,
+23,Awatef chawali,borj louzir,Kram,10,0,1,
+23,HEND AJEJ,Bhar lazrek,lac3,10,0,1,
+23,Beni henriette,Bhar lazrek,lac3,10,0,1,1042.0
+23,Marwa Wartenni,Ben Arous El Kateb,lac3,10,0,1,
+24,MAHMOUD SOULAIMA,lac3,Ibn Mandhour Ariana,19,0,1,989.0
+24,SAID MARWA,lac3,Ibn Mandhour Ariana,19,0,1,
+24,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,0,1,1941.0
+24,MARWEN NASER,lac3,FOUCHENA,19,0,1,3744.0
+25,Ghouibi Hanen,Cite el kadhra,lac3,10,1,1,
+25,OMRANI HEJER,BOUMHAL,lac3,10,1,1,1665.0
+25,AOUATEF CHAOUALI,borj louzir,lac3,10,1,1,1853.0
+25,OUECHTATI NADER,CENTRE VILLE RUE DE PARIS,lac3,10,1,1,
+26,EYA ARFAOUI,Mourouj 4,lac3,10,1,1,
+26,Djossou Rogel,Nour Jaafer,lac3,10,1,1,
+26,Wael Thabet,Mousqué Errawdha,lac3,10,1,1,
+26,Youssef ayachi,Mousqué Errawdha,lac3,10,1,1,
+27,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,1,1,1941.0
+27,Amel,Ezzahrouni,lac3,10,1,1,461.0
+27,SAID MARWA,Ibn Mandhour Ariana,lac3,10,1,1,2846.0
+27,MARWEN NASER,FOUCHENA,lac3,10,1,1,7830.0
+28,EYA RAHMOUNI,lac3,Djbal Jeloud,19,1,1,1654.0
+28,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,1,1,1941.0
+28,RENE RICHARD,lac3,ENNASR 1,19,1,1,
+28,MARWEN NASER,lac3,FOUCHENA,19,1,1,3744.0
+29,EYA ARFAOUI,Mourouj 4,lac3,10,2,1,
+29,Youssef ayachi,Mousqué Errawdha,lac3,10,2,1,
+29,Wael Thabet,Mousqué Errawdha,lac3,10,2,1,
+29,Djossou Rogel,Nour Jaafer,lac3,10,2,1,
+30,SAID MARWA,Ibn Mandhour Ariana,lac3,10,2,1,8375.0
+30,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,2,1,1941.0
+30,MARWEN NASER,FOUCHENA,lac3,10,2,1,7830.0
+30,Amel,Ezzahrouni,lac3,10,2,1,
+31,AOUATEF CHAOUALI,borj louzir,lac3,10,2,1,
+31,OMRANI HEJER,BOUMHAL,lac3,10,2,1,1665.0
+31,HEND AJEJ,Bhar lazrek,lac3,10,2,1,1042.0
+31,Ghouibi Hanen,Cite el kadhra,lac3,10,2,1,
+32,RENE RICHARD,lac3,ENNASR 1,19,2,1,
+32,HAIFA BENZARTI,lac3,DENDEN,19,2,1,
+32,MARWEN NASER,lac3,FOUCHENA,19,2,1,3744.0
+32,EYA RAHMOUNI,lac3,Djbal Jeloud,19,2,1,
+33,Ghouibi Hanen,Cite el kadhra,lac3,10,3,1,
+33,Yousra Houiji,cité bennacer manouba,lac3,10,3,1,2900.0
+33,AOUATEF CHAOUALI,borj louzir,lac3,10,3,1,
+33,OMRANI HEJER,BOUMHAL,lac3,10,3,1,1665.0
+34,Youssef ayachi,Mousqué Errawdha,lac3,10,3,1,
+34,Djossou Rogel,Nour Jaafer,lac3,10,3,1,7444.0
+34,Wael Thabet,Mousqué Errawdha,lac3,10,3,1,
+34,EYA ARFAOUI,Mourouj 4,lac3,10,3,1,
+35,Amel,Ezzahrouni,lac3,10,3,1,
+35,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,3,1,1941.0
+35,RENE RICHARD,ENNASR 1,lac3,10,3,1,
+35,MARWEN NASER,FOUCHENA,lac3,10,3,1,7830.0
+36,MARWEN NASER,lac3,FOUCHENA,19,3,1,3744.0
+36,EYA RAHMOUNI,lac3,Djbal Jeloud,19,3,1,
+36,HAIFA BENZARTI,lac3,DENDEN,19,3,1,2742.0
+36,RENE RICHARD,lac3,ENNASR 1,19,3,1,
+37,Djossou Rogel,Nour Jaafer,lac3,10,4,1,7444.0
+37,Wael Thabet,Mousqué Errawdha,lac3,10,4,1,7212.0
+37,Youssef ayachi,Mousqué Errawdha,lac3,10,4,1,
+37,EYA ARFAOUI,Mourouj 4,lac3,10,4,1,
+38,HEND AJEJ,Bhar lazrek,lac3,10,4,1,1042.0
+38,AOUATEF CHAOUALI,borj louzir,lac3,10,4,1,
+38,OMRANI HEJER,BOUMHAL,lac3,10,4,1,1665.0
+38,Ghouibi Hanen,Cite el kadhra,lac3,10,4,1,
+39,Amel,Ezzahrouni,lac3,10,4,1,
+39,MARWEN NASER,FOUCHENA,lac3,10,4,1,7830.0
+39,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,4,1,1941.0
+39,RENE RICHARD,ENNASR 1,lac3,10,4,1,
+40,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,4,1,
+40,RENE RICHARD,lac3,ENNASR 1,19,4,1,
+40,MARWEN NASER,lac3,FOUCHENA,19,4,1,3744.0
+40,EYA RAHMOUNI,lac3,Djbal Jeloud,19,4,1,
+41,EYA RAHMOUNI,Djbal Jeloud,lac3,10,0,1,
+41,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,0,1,
+41,GHAZI REKIK,Cité wahat l'aouina,lac3,10,0,1,
+41,HAIFA BENZARTI,DENDEN,lac3,10,0,1,
+42,EYA ARFAOUI,Mourouj 4,lac3,10,0,1,
+42,Wael Thabet,Mousqué Errawdha,lac3,10,0,1,
+42,HEND BEN NSSER,MOUROUJ 6,lac3,10,0,1,
+42,Youssef ayachi,Mousqué Errawdha,lac3,10,0,1,
+43,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,0,1,
+43,HEND AJEJ,lac3,Bhar lazrek,19,0,1,1906.0
+43,Beni henriette,lac3,Bhar lazrek,19,0,1,
+43,AOUATEF CHAOUALI,lac3,borj louzir,19,0,1,
+44,MARWEN NASER,FOUCHENA,lac3,10,1,1,7830.0
+44,REFKA OUERTANI,HAMMEM CHATT,lac3,10,1,1,5696.0
+44,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,1,1,1941.0
+44,Amel,Ezzahrouni,lac3,10,1,1,
+45,OMRANI HEJER,BOUMHAL,lac3,10,1,1,
+45,Beni henriette,Bhar lazrek,lac3,10,1,1,
+45,AOUATEF CHAOUALI,borj louzir,lac3,10,1,1,
+45,HEND AJEJ,Bhar lazrek,lac3,10,1,1,
+46,Youssef ayachi,Mousqué Errawdha,lac3,10,1,1,
+46,Djossou Rogel,Nour Jaafer,lac3,10,1,1,
+46,HEND BEN NSSER,MOUROUJ 6,lac3,10,1,1,
+46,EYA ARFAOUI,Mourouj 4,lac3,10,1,1,
+47,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,1,1,
+47,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,1,1,
+47,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,1,1,
+47,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,1,1,10050.0
+48,refka ouetatani,hamam chatt,lac3,10,2,1,2708.0
+48,MARWEN NASER,FOUCHENA,lac3,10,2,1,7830.0
+48,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,2,1,1941.0
+48,Amel,Ezzahrouni,lac3,10,2,1,
+49,OMRANI HEJER,BOUMHAL,lac3,10,2,1,
+49,Beni henriette,Bhar lazrek,lac3,10,2,1,
+49,AOUATEF CHAOUALI,borj louzir,lac3,10,2,1,
+49,HEND AJEJ,Bhar lazrek,lac3,10,2,1,1042.0
+50,Youssef ayachi,Mousqué Errawdha,lac3,10,2,1,1853.0
+50,EYA ARFAOUI,Mourouj 4,lac3,10,2,1,
+50,Wael Thabet,Mousqué Errawdha,lac3,10,2,1,
+50,Djossou Rogel,Nour Jaafer,lac3,10,2,1,
+51,MALEK MARSAOUI,lac3,Beb Laassal,19,2,1,
+51,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,2,1,
+51,AOUATEF CHAOUALI,lac3,borj louzir,19,2,1,
+51,HEND AJEJ,lac3,Bhar lazrek,19,2,1,626.0
+52,MARWEN NASER,FOUCHENA,lac3,10,3,1,7830.0
+52,Hmani Loubna,Hopital militaire Tunis,lac3,10,3,1,
+52,REFKA OUERTANI,HAMMEM CHATT,lac3,10,3,1,1665.0
+52,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,3,1,1941.0
+53,MARWA WARTENI,Ben arous,lac3,10,3,1,
+53,HEND AJEJ,Bhar lazrek,lac3,10,3,1,1042.0
+53,OMRANI HEJER,BOUMHAL,lac3,10,3,1,
+53,AOUATEF CHAOUALI,borj louzir,lac3,10,3,1,
+54,Youssef ayachi,Mousqué Errawdha,lac3,10,3,1,
+54,EYA ARFAOUI,Mourouj 4,lac3,10,3,1,
+54,HEND BEN NSSER,MOUROUJ 6,lac3,10,3,1,
+54,Wael Thabet,Mousqué Errawdha,lac3,10,3,1,
+55,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,3,1,
+55,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,3,1,
+55,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,3,1,
+55,SIWAR JELJLI,lac3,BARDO,19,3,1,2742.0
+56,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,4,1,1941.0
+56,Amel,Ezzahrouni,lac3,10,4,1,
+56,REFKA OUERTANI,HAMMEM CHATT,lac3,10,4,1,1665.0
+56,MARWEN NASER,FOUCHENA,lac3,10,4,1,7830.0
+57,OMRANI HEJER,BOUMHAL,lac3,10,4,1,
+57,Beni henriette,Bhar lazrek,lac3,10,4,1,
+57,HEND AJEJ,Bhar lazrek,lac3,10,4,1,1042.0
+57,AOUATEF CHAOUALI,borj louzir,lac3,10,4,1,
+58,EYA ARFAOUI,Mourouj 4,lac3,10,4,1,
+58,HEND BEN NSSER,MOUROUJ 6,lac3,10,4,1,
+58,Wael Thabet,Mousqué Errawdha,lac3,10,4,1,
+58,Youssef ayachi,Mousqué Errawdha,lac3,10,4,1,7212.0
+59,MALEK MARSAOUI,lac3,Beb Laassal,19,4,1,
+59,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,4,1,
+59,MARWA WARTENI,lac3,Ben arous,19,4,1,
+59,SIWAR JELJLI,lac3,BARDO,19,4,1,
+60,MARWEN NASER,FOUCHENA,lac3,10,0,1,1615.0
+60,Amel,Ezzahrouni,lac3,10,0,1,
+60,REFKA OUERTANI,HAMMEM CHATT,lac3,10,0,1,1665.0
+60,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,0,1,1941.0
+61,OMRANI HEJER,BOUMHAL,lac3,10,0,1,
+61,AOUATEF CHAOUALI,borj louzir,lac3,10,0,1,7212.0
+61,Beni henriette,Bhar lazrek,lac3,10,0,1,5696.0
+61,HEND AJEJ,Bhar lazrek,lac3,10,0,1,
+62,EYA ARFAOUI,Mourouj 4,lac3,10,0,1,
+62,Wael Thabet,Mousqué Errawdha,lac3,10,0,1,
+62,Youssef ayachi,Mousqué Errawdha,lac3,10,0,1,
+62,HEND BEN NSSER,MOUROUJ 6,lac3,10,0,1,
+63,MALEK MARSAOUI,lac3,Beb Laassal,19,0,1,
+63,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,0,1,
+63,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,0,1,
+63,MARWA WARTENI,lac3,Ben arous,19,0,1,
+64,Mariem Rahali,Nacer 2,lac3,10,1,1,
+64,Youssef ayachi,Mousqué Errawdha,lac3,10,1,1,
+64,Wael Thabet,Mousqué Errawdha,lac3,10,1,1,1853.0
+64,Djossou Rogel,Nour Jaafer,lac3,10,1,1,
+65,AOUATEF CHAOUALI,borj louzir,lac3,10,1,1,
+65,Beni henriette,Bhar lazrek,lac3,10,1,1,
+65,MARWA WARTENI,Ben arous,lac3,10,1,1,
+65,HEND AJEJ,Bhar lazrek,lac3,10,1,1,5696.0
+66,REFKA OUERTANI,HAMMEM CHATT,lac3,10,1,1,3744.0
+66,MARWEN NASER,FOUCHENA,lac3,10,1,1,1203.0
+66,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,1,1,1941.0
+66,Amel,Ezzahrouni,lac3,10,1,1,
+67,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,1,1,
+67,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,1,1,
+67,SIWAR JELJLI,lac3,BARDO,19,1,1,
+67,MALEK MARSAOUI,lac3,Beb Laassal,19,1,1,
+68,CHAIMA GHARBI,BEB SOUIKA,lac3,10,2,1,
+68,MARWA WARTENI,Ben arous,lac3,10,2,1,
+68,AOUATEF CHAOUALI,borj louzir,lac3,10,2,1,
+68,HEND AJEJ,Bhar lazrek,lac3,10,2,1,1042.0
+69,Djossou Rogel,Nour Jaafer,lac3,10,2,1,
+69,HEND BEN NSSER,MOUROUJ 6,lac3,10,2,1,
+69,Mariem Rahali,Nacer 2,lac3,10,2,1,
+69,Wael Thabet,Mousqué Errawdha,lac3,10,2,1,1853.0
+70,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,2,1,1941.0
+70,MARWEN NASER,FOUCHENA,lac3,10,2,1,5696.0
+70,NOUMOU FRANCH,FRANCE VILLE GOMBATTA,lac3,10,2,1,1615.0
+70,Hmani Loubna,Hopital militaire Tunis,lac3,10,2,1,
+71,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,2,1,
+71,MALEK MARSAOUI,lac3,Beb Laassal,19,2,1,
+71,SIWAR JELJLI,lac3,BARDO,19,2,1,
+71,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,2,1,
+72,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,3,1,
+72,MARWA WARTENI,lac3,Ben arous,19,3,1,
+72,AOUATEF CHAOUALI,lac3,borj louzir,19,3,1,
+72,HEND AJEJ,lac3,Bhar lazrek,19,3,1,6817.0
+73,Djossou Rogel,Nour Jaafer,lac3,10,3,1,
+73,Mariem Rahali,Nacer 2,lac3,10,3,1,
+73,HEND BEN NSSER,MOUROUJ 6,lac3,10,3,1,
+73,Wael Thabet,Mousqué Errawdha,lac3,10,3,1,1853.0
+74,MARWA WARTENI,Ben arous,lac3,10,3,1,
+74,CHAIMA GHARBI,BEB SOUIKA,lac3,10,3,1,
+74,AOUATEF CHAOUALI,borj louzir,lac3,10,3,1,
+74,HEND AJEJ,Bhar lazrek,lac3,10,3,1,1042.0
+75,NOUMOU FRANCH,FRANCE VILLE GOMBATTA,lac3,10,3,1,1941.0
+75,MARWEN NASER,FOUCHENA,lac3,10,3,1,5696.0
+75,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,3,1,1615.0
+75,Hmani Loubna,Hopital militaire Tunis,lac3,10,3,1,
+76,CHAIMA GHARBI,BEB SOUIKA,lac3,10,4,1,
+76,MARWA WARTENI,Ben arous,lac3,10,4,1,
+76,HEND AJEJ,Bhar lazrek,lac3,10,4,1,
+76,AOUATEF CHAOUALI,borj louzir,lac3,10,4,1,
+77,Mariem Rahali,Nacer 2,lac3,10,4,1,
+77,HEND BEN NSSER,MOUROUJ 6,lac3,10,4,1,
+77,Wael Thabet,Mousqué Errawdha,lac3,10,4,1,7212.0
+77,Djossou Rogel,Nour Jaafer,lac3,10,4,1,
+78,NOUMOU FRANCH,FRANCE VILLE GOMBATTA,lac3,10,4,1,1615.0
+78,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,4,1,1941.0
+78,Hmani Loubna,Hopital militaire Tunis,lac3,10,4,1,
+78,MARWEN NASER,FOUCHENA,lac3,10,4,1,5696.0
+79,CHAIMA GHARBI,lac3,BEB SOUIKA,19,4,1,
+79,MALEK MARSAOUI,lac3,Beb Laassal,19,4,1,
+79,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,4,1,
+79,MARWA WARTENI,lac3,Ben arous,19,4,1,
+80,Wael Thabet,Mousqué Errawdha,lac3,10,0,1,
+80,Rahma Nabli,mourouj 4,lac3,10,0,1,2742.0
+80,Yosr Najjar,Mousqué Errawdha,lac3,10,0,1,7212.0
+80,Youssef ayachi,Mousqué Errawdha,lac3,10,0,1,
+81,claude noah,menzeh 5 café jardin,lac3,10,0,1,
+81,Zied Aboud,Menzeh 7,lac3,10,0,1,
+81,Mohamed Dali Souissi,Sidi Bousaid,lac3,10,0,1,1853.0
+81,Hosni Briki,Urgence hbib thamer,lac3,10,0,1,
+82,Slim mamoghli,Yassminette ben arous,lac3,10,0,1,
+83,Zied Aboud,lac3,Menzeh 7,19,0,1,
+83,claude noah,lac3,menzeh 5 café jardin,19,0,1,
+83,Amel,lac3,Ezzahrouni,19,0,1,
+83,Ayari Imen,lac3,Jaafer,19,0,1,
+84,Yosr Najjar,lac3,Mousqué Errawdha,19,0,1,
+84,Youssef ayachi,lac3,Mousqué Errawdha,19,0,1,
+84,SAIDA BOUDHIB,ECR Alain Savary,Parck Soukra,19,0,1,10050.0
+84,Wael Thabet,lac3,Mousqué Errawdha,19,0,1,
+85,Ebata Freud,lac3,Nkhlilette,19,0,1,
+85,Pavel MALANDA,ECR Alain Savary,Nour Jaafar,19,0,1,
+85,Djossou Rogel,lac3,Nour Jaafer,19,0,1,10568.0
+85,Mariem Rahali,lac3,Nacer 2,19,0,1,
+86,Nesrine GUIDARA,ECR Alain Savary,Mourouj 1,19,0,1,
+86,Maryem BEN AHMED,ECR Alain Savary,Medina Jadida,19,0,1,3744.0
+86,Rezgui Mounir,lac3,Rades melyene,19,0,1,1906.0
+86,Hosni Briki,lac3,Urgence hbib thamer,19,0,1,
+87,HALIMA BOUFENECH,ECR Alain Savary,Ezzahrouni (devant lycée),19,0,1,1203.0
+87,eif allah jebali,ECR Alain Savary,Jaafer,19,0,1,1042.0
+87,Slim mamoghli,lac3,Yassminette ben arous,19,0,1,
+87,El Arbi Saber,ECR Alain Savary,Denden,19,0,1,
+88,seif allah jebali,ECR Alain Savary,Jaafer,19,1,1,10050.0
+88,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,0,1,
+89,Wael Thabet,Mousqué Errawdha,lac3,10,1,1,
+89,WAEL LADJIMI,Rades,lac3,10,1,1,5696.0
+89,Youssef ayachi,Mousqué Errawdha,lac3,10,1,1,
+89,Yosr Najjar,Mousqué Errawdha,lac3,10,1,1,7212.0
+90,Zied Aboud,Menzeh 7,lac3,10,1,1,
+90,Rezgui Mounir,Rades melyene,lac3,10,1,1,
+90,HAMDI HICHEM,Mhamdeya,lac3,10,1,1,7830.0
+90,HOUDA FARES,Menzeh 7,lac3,10,1,1,
+91,claude noah,menzeh 5 café jardin,lac3,10,1,1,2742.0
+91,Mohamed Dali Souissi,Sidi Bousaid,lac3,10,1,1,
+91,WISSEM NAMOUCHI,Menzeh 7,lac3,10,1,1,
+91,SAIDA TAKALI,Marsa plage,lac3,10,1,1,1042.0
+92,Slim mamoghli,Yassminette ben arous,lac3,10,1,1,
+92,Hosni Briki,Urgence hbib thamer,lac3,10,1,1,
+93,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,1,1,8375.0
+93,MENEL BEN DHAOU,ariana batoire,lac3,10,1,1,
+93,MANSOURI ZOUHAYRA,ariana batoire kiosque shell,lac3,10,1,1,
+93,NUMBI NAAY FEARISS,Cité el mile7a,lac3,10,1,1,
+94,BILEL RAHMOUNI,lac3,hedi nouira (borj louzir),19,1,1,
+94,HOUDA FARES,lac3,Menzeh 7,19,1,1,
+94,Zied Aboud,lac3,Menzeh 7,19,1,1,1853.0
+94,HAMDI HICHEM,lac3,Mhamdeya,19,1,1,3744.0
+95,Mariem Rahali,lac3,Nacer 2,19,1,1,7830.0
+95,Yosr Najjar,lac3,Mousqué Errawdha,19,1,1,7212.0
+95,Wael Thabet,lac3,Mousqué Errawdha,19,1,1,
+95,Youssef ayachi,lac3,Mousqué Errawdha,19,1,1,
+96,Ebata Freud,lac3,Nkhlilette,19,1,1,
+96,Amel,lac3,Ezzahrouni,19,1,1,
+96,MEHDI KHAIRALLAH,lac3,omrane superieur,19,1,1,1203.0
+96,Djossou Rogel,lac3,Nour Jaafer,19,1,1,10568.0
+97,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,1,1,
+97,Rezgui Mounir,lac3,Rades melyene,19,1,1,5696.0
+97,WAEL LADJIMI,lac3,Rades,19,1,1,
+97,Mohamed Dali Souissi,lac3,Sidi Bousaid,19,1,1,
+98,Slim mamoghli,lac3,Yassminette ben arous,19,1,1,
+98,Hosni Briki,lac3,Urgence hbib thamer,19,1,1,
+98,Yousra Houiji,lac3,cité bennacer manouba,19,1,1,
+98,NUMBI NAAY FEARISS,lac3,cité el mile7a,19,1,1,
+99,Malek ben arous,lac3,Bhar lazrek,19,1,1,1042.0
+99,Beni henriette,lac3,Bhar lazrek,19,1,1,
+99,MANSOURI ZOUHAYRA,lac3,ariana batoire kiosque shell,19,1,1,
+100,Wael Thabet,Mousqué Errawdha,lac3,10,2,1,
+100,WAEL LADJIMI,Rades,lac3,10,2,1,
+100,Youssef ayachi,Mousqué Errawdha,lac3,10,2,1,
+100,Yosr Najjar,Mousqué Errawdha,lac3,10,2,1,7212.0
+101,Zied Aboud,Menzeh 7,lac3,10,2,1,1615.0
+101,HAMDI HICHEM,Mhamdeya,lac3,10,2,1,7830.0
+101,Rezgui Mounir,Rades melyene,lac3,10,2,1,1665.0
+101,WISSEM NAMOUCHI,Menzeh 7,lac3,10,2,1,
+102,Hosni Briki,Urgence hbib thamer,lac3,10,2,1,
+102,Mohamed Dali Souissi,Sidi Bousaid,lac3,10,2,1,
+102,HOUDA FARES,Menzeh 7,lac3,10,2,1,
+102,claude noah,menzeh 5 café jardin,lac3,10,2,1,
+103,Slim mamoghli,Yassminette ben arous,lac3,10,2,1,
+104,KANNY INDA,BEB LA3SSAL,lac3,10,2,1,
+104,MANSOURI ZOUHAYRA,ariana batoire kiosque shell,lac3,10,2,1,
+104,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,2,1,8375.0
+105,Amel,lac3,Ezzahrouni,19,2,1,
+105,WISSEM NAMOUCHI,lac3,Menzeh 7,19,2,1,
+105,Zied Aboud,lac3,Menzeh 7,19,2,1,1615.0
+105,claude noah,lac3,menzeh 5 café jardin,19,2,1,
+106,SAHAR EL FAIRES,lac3,Cité saha,19,2,1,
+106,HOUDA FARES,lac3,Menzeh 7,19,2,1,
+106,Youssef ayachi,lac3,Mousqué Errawdha,19,2,1,
+106,ameni abidi,lac3,cié mahrajen,19,2,1,7212.0
+107,Wael Thabet,lac3,Mousqué Errawdha,19,2,1,
+107,Mariem Rahali,lac3,Nacer 2,19,2,1,
+107,Yosr Najjar,lac3,Mousqué Errawdha,19,2,1,1906.0
+107,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,2,1,
+108,MEHDI KHAIRALLAH,lac3,omrane superieur,19,2,1,
+108,Djossou Rogel,lac3,Nour Jaafer,19,2,1,10568.0
+108,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,2,1,
+108,Ebata Freud,lac3,Nkhlilette,19,2,1,
+109,Yousra Houiji,lac3,cité bennacer manouba,19,2,1,
+109,Rezgui Mounir,lac3,Rades melyene,19,2,1,5696.0
+109,NUMBI NAAY FEARISS,lac3,cité el mile7a,19,2,1,1203.0
+109,WAEL LADJIMI,lac3,Rades,19,2,1,
+110,HEND AJEJ,lac3,Bhar lazrek,19,2,1,10050.0
+110,Beni henriette,lac3,Bhar lazrek,19,2,1,
+110,Mohamed Dali Souissi,lac3,Sidi Bousaid,19,2,1,
+110,KANNY INDA,lac3,BEB LA3SSAL,19,2,1,
+111,SIWAR JELJLI,lac3,BARDO,19,2,1,7830.0
+111,Slim mamoghli,lac3,Yassminette ben arous,19,2,1,
+111,MANSOURI ZOUHAYRA,lac3,ariana batoire kiosque shell,19,2,1,
+111,Hosni Briki,lac3,Urgence hbib thamer,19,2,1,
+112,KHAWLA JERBI,lac3,ARIANA,19,2,1,
+113,WAEL LADJIMI,Rades,lac3,10,3,1,5696.0
+113,Wael Thabet,Mousqué Errawdha,lac3,10,3,1,7212.0
+113,Yosr Najjar,Mousqué Errawdha,lac3,10,3,1,
+113,Youssef ayachi,Mousqué Errawdha,lac3,10,3,1,
+114,HOUDA FARES,Menzeh 7,lac3,10,3,1,
+114,WISSEM NAMOUCHI,Menzeh 7,lac3,10,3,1,
+114,Zied Aboud,Menzeh 7,lac3,10,3,1,1615.0
+114,claude noah,menzeh 5 café jardin,lac3,10,3,1,
+115,Slim mamoghli,Yassminette ben arous,lac3,10,3,1,
+115,Mohamed Dali Souissi,Sidi Bousaid,lac3,10,3,1,1042.0
+115,Hosni Briki,Urgence hbib thamer,lac3,10,3,1,
+116,EMNA SOUMER,kheireddine (kram),lac3,10,3,1,
+116,Najwa,El aghba,lac3,10,3,1,
+117,NUMBI NAAY FEARISS,Cité el mile7a,lac3,10,3,1,
+117,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,3,1,
+117,Ameni Abidi,Cité mahragene,lac3,10,3,1,
+117,KANNY INDA,BEB LA3SSAL,lac3,10,3,1,
+118,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,3,1,8375.0
+118,SIWAR JELJLI,BARDO,lac3,10,3,1,1203.0
+118,MANSOURI ZOUHAYRA,ariana batoire kiosque shell,lac3,10,3,1,
+118,SAHAR EL FAIRES,Cité saha,lac3,10,3,1,
+119,claude noah,lac3,menzeh 5 café jardin,19,3,1,
+119,Amel,lac3,Ezzahrouni,19,3,1,
+119,HOUDA FARES,lac3,Menzeh 7,19,3,1,
+119,Zied Aboud,lac3,Menzeh 7,19,3,1,
+120,WISSEM NAMOUCHI,lac3,Menzeh 7,19,3,1,1615.0
+120,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,3,1,
+120,SAHAR EL FAIRES,lac3,Cité saha,19,3,1,
+120,Ameni Abidi,lac3,Cité mahragene,19,3,1,
+121,Yosr Najjar,lac3,Mousqué Errawdha,19,3,1,7212.0
+121,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,3,1,1203.0
+121,Wael Thabet,lac3,Mousqué Errawdha,19,3,1,
+121,Youssef ayachi,lac3,Mousqué Errawdha,19,3,1,
+122,Djossou Rogel,lac3,Nour Jaafer,19,3,1,
+122,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,3,1,
+122,Ebata Freud,lac3,Nkhlilette,19,3,1,
+122,Mariem Rahali,lac3,Nacer 2,19,3,1,
+123,MEHDI KHAIRALLAH,lac3,omrane superieur,19,3,1,
+123,WAEL LADJIMI,lac3,Rades,19,3,1,5696.0
+123,Yousra Houiji,lac3,cité bennacer manouba,19,3,1,
+123,HEND AJEJ,lac3,Bhar lazrek,19,3,1,
+124,SIWAR JELJLI,lac3,BARDO,19,3,1,7830.0
+124,Hosni Briki,lac3,Urgence hbib thamer,19,3,1,
+124,KANNY INDA,lac3,BEB LA3SSAL,19,3,1,
+124,Beni henriette,lac3,Bhar lazrek,19,3,1,10050.0
+125,MANSOURI ZOUHAYRA,lac3,ariana batoire kiosque shell,19,3,1,1906.0
+125,Slim mamoghli,lac3,Yassminette ben arous,19,3,1,
+126,Ayari Imen,Jaafer,lac3,10,4,1,
+126,Ayari Imen,Jaafer,lac3,8,4,1,7212.0
+127,Zied Aboud,Menzeh 7,lac3,10,4,1,1615.0
+127,Youssef ayachi,Mousqué Errawdha,lac3,10,4,1,
+127,WAEL LADJIMI,Rades,lac3,10,4,1,5696.0
+127,WISSEM NAMOUCHI,Menzeh 7,lac3,10,4,1,
+128,Slim mamoghli,Yassminette ben arous,lac3,10,4,1,
+128,Hosni Briki,Urgence hbib thamer,lac3,10,4,1,
+128,claude noah,menzeh 5 café jardin,lac3,10,4,1,
+128,HOUDA FARES,Menzeh 7,lac3,10,4,1,
+129,Wael Thabet,Mousqué Errawdha,lac3,8,4,1,
+130,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,4,1,1203.0
+130,KANNY INDA,BEB LA3SSAL,lac3,10,4,1,
+130,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,4,1,
+130,SIWAR JELJLI,BARDO,lac3,10,4,1,8375.0
+131,MANSOURI ZOUHAYRA,ariana batoire kiosque shell,lac3,10,4,1,
+131,SAHAR EL FAIRES,Cité saha,lac3,10,4,1,
+132,MARWEN NASER,lac3,FOUCHENA,19,4,1,3744.0
+132,claude noah,lac3,menzeh 5 café jardin,19,4,1,
+132,WISSEM NAMOUCHI,lac3,Menzeh 7,19,4,1,
+132,Zied Aboud,lac3,Menzeh 7,19,4,1,1615.0
+133,Wael Thabet,lac3,Mousqué Errawdha,19,4,1,
+133,HOUDA FARES,lac3,Menzeh 7,19,4,1,
+133,Youssef ayachi,lac3,Mousqué Errawdha,19,4,1,
+133,Yosr Najjar,lac3,Mousqué Errawdha,19,4,1,7212.0
+134,SAHAR EL FAIRES,lac3,Cité saha,19,4,1,
+134,Mariem Rahali,lac3,Nacer 2,19,4,1,
+134,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,4,1,7830.0
+134,Ebata Freud,lac3,Nkhlilette,19,4,1,
+135,Djossou Rogel,lac3,Nour Jaafer,19,4,1,
+135,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,4,1,
+135,WAEL LADJIMI,lac3,Rades,19,4,1,5696.0
+135,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,4,1,
+136,Yousra Houiji,lac3,cité bennacer manouba,19,4,1,1203.0
+136,Beni henriette,lac3,Bhar lazrek,19,4,1,626.0
+136,KANNY INDA,lac3,BEB LA3SSAL,19,4,1,
+136,HEND AJEJ,lac3,Bhar lazrek,19,4,1,
+137,Hosni Briki,lac3,Urgence hbib thamer,19,4,1,
+137,MANSOURI ZOUHAYRA,lac3,ariana batoire kiosque shell,19,4,1,
+137,SIWAR JELJLI,lac3,BARDO,19,4,1,
+137,Slim mamoghli,lac3,Yassminette ben arous,19,4,1,
+138,Amel,lac3,zahrouni,17,4,1,5696.0
+139,Amel,Ezzahrouni,lac3,10,0,1,461.0
+139,MARWEN NASER,FOUCHENA,lac3,10,0,1,7830.0
+139,Eya Rahmouni,Jbel Jeloud,lac3,10,0,1,5696.0
+140,Zied Aboud,Menzeh 7,lac3,10,0,1,1615.0
+140,WISSEM NAMOUCHI,Menzeh 7,lac3,10,0,1,
+140,HOUDA FARES,Menzeh 7,lac3,10,0,1,
+140,Mehdi Bedhiafi,Ouardia,lac3,10,0,1,
+141,claude noah,menzeh 5 café jardin,lac3,10,0,1,
+141,Hatem Hajri,Medina jadida,Kram,10,0,1,1665.0
+141,Yosra Hammami,Medina Jadida,lac3,10,0,1,
+141,WAEL LADJIMI,Rades,lac3,10,0,1,
+142,Jhonson Maxime,Manar 1,lac3,10,0,1,
+142,Nader ouechtati,Rue de paris centre-ville,lac3,10,0,1,
+142,Sabrine Sassi,Rond-point Khaznadar,lac3,10,0,1,
+142,Elsa Djim,Manar 1,lac3,10,0,1,
+143,Slim mamoghli,Yassminette ben arous,lac3,10,0,1,1665.0
+143,Bounakcha Maha,Saida,lac3,10,0,1,
+144,NUMBI NAAY FEARISS,Cité el mile7a,lac3,10,0,1,
+144,Yousra Houiji,Cité bennacer manouba,lac3,10,0,1,2900.0
+144,Gammoudi Oumayma,Cité El Khadhra,lac3,10,0,1,
+144,Gouibi Haven,Cité El Khadhra,lac3,10,0,1,
+145,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,0,1,
+145,Oumayma Gammoudi,cité etadhamen,Kram,10,0,1,10183.0
+145,Kimini Khey,Beb Laassal,lac3,10,0,1,
+145,Malek Marsaoui,Beb Laassal,lac3,10,0,1,
+146,SAMIRATOU COPORE,Citéwahat l'aouina,lac3,10,0,1,
+146,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,0,1,8818.0
+146,SAHAR EL FAIRES,Cité saha,lac3,10,0,1,
+146,SIWAR JELJLI,BARDO,lac3,10,0,1,
+147,KHAWLA JERBI,ARIANA,lac3,10,0,1,
+147,Ayari Hajer,Ariana RN8,lac3,10,0,1,
+148,JOHNSON MAXIME,lac3,Manar 1,19,0,1,
+148,SAMIRATOU COPORE,lac3,Citéwahat l'aouina,19,0,1,
+148,EYA RAHMOUNI,lac3,Djbal Jeloud,19,0,1,
+148,Ayari Imen,lac3,Jaafer,19,0,1,
+149,HAJRI HATEM,lac3,MEDINA JADIDA,19,0,1,
+149,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,0,1,
+149,SAHAR EL FAIRES,lac3,Cité saha,19,0,1,
+149,ELSA DJIM,lac3,Manar 1,19,0,1,
+150,HOUDA FARES,lac3,Menzeh 7,19,0,1,
+150,WISSEM NAMOUCHI,lac3,Menzeh 7,19,0,1,
+150,claude noah,lac3,menzeh 5 café jardin,19,0,1,626.0
+150,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,0,1,1042.0
+151,Yousra Houiji,lac3,Cité bennacer manouba,19,0,1,
+151,Gammoudi Oumaima,lac3,Cité etadhamen,19,0,1,
+151,Zied Aboud,lac3,Menzeh 7,19,0,1,
+151,EYA ARFAOUI,lac3,Mourouj 4,19,0,1,
+152,Youssef ayachi,lac3,Mousqué Errawdha,19,0,1,7212.0
+152,MEHDI BEDHIAFI,lac3,Ouardia,19,0,1,
+152,Ghouibi Hanen,lac3,Cite el kadhra,19,0,1,
+152,Wael Thabet,lac3,Mousqué Errawdha,19,0,1,
+153,MARWA WARTENI,lac3,Ben arous,19,0,1,
+153,AOUATEF CHAOUALI,lac3,borj louzir,19,0,1,10568.0
+153,Beni henriette,lac3,Bhar lazrek,19,0,1,10050.0
+153,HEND AJEJ,lac3,Bhar lazrek,19,0,1,
+154,SABRINE SASSI,lac3,Rond-point Khaznadar,19,0,1,7830.0
+154,MALEK MARSAOUI,lac3,Beb Laassal,19,0,1,
+154,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,0,1,
+154,Nader ouechtati,lac3,Rue de paris centre-ville,19,0,1,
+155,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,0,1,
+155,SIWAR JELJLI,lac3,BARDO,19,0,1,
+155,KHAWLA JERBI,lac3,ARIANA,19,0,1,
+155,Bounakcha Maha,lac3,Saida,19,0,1,1906.0
+156,Slim mamoghli,lac3,Yassminette ben arous,19,0,1,5696.0
+156,Hosni Briki,lac3,Urgence hbib thamer,19,0,1,
+157,HEND AJEJ,Bhar lazrek,lac3,10,1,1,
+157,Beni henriette,Bhar lazrek,lac3,10,1,1,1042.0
+157,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,1,1,
+157,Yousra Houiji,cité bennacer manouba,lac3,10,1,1,2900.0
+158,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,1,1,
+158,Gammoudi Oumaima,cité etadhamen,lac3,10,1,1,8818.0
+158,MARWA WARTENI,Ben arous,lac3,10,1,1,
+158,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,1,1,
+159,SAHAR EL FAIRES,Cité saha,lac3,10,1,1,
+159,SAMIRATOU COPORE,Citéwahat l'aouina,lac3,10,1,1,
+159,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,1,1,
+159,MALEK MARSAOUI,Beb Laassal,lac3,10,1,1,
+160,SIWAR JELJLI,BARDO,lac3,10,1,1,
+160,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,1,1,
+160,EYA RAHMOUNI,Djbal Jeloud,lac3,10,1,1,
+160,HAIFA BENZARTI,DENDEN,lac3,10,1,1,
+161,KHAWLA JERBI,ARIANA,lac3,10,1,1,
+162,HOUDA FARES,Menzeh 7,lac3,10,1,1,
+162,Zied Aboud,Menzeh 7,lac3,10,1,1,
+162,MEHDI BEDHIAFI,Ouardia,lac3,10,1,1,5696.0
+162,WISSEM NAMOUCHI,Menzeh 7,lac3,10,1,1,
+163,SABRINE SASSI,Rond-point Khaznadar,lac3,10,1,1,
+163,claude noah,menzeh 5 café jardin,lac3,10,1,1,1615.0
+163,HAJRI HATEM,MEDINA JADIDA,lac3,10,1,1,
+163,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,1,1,
+164,ELSA DJIM,Manar 1,lac3,10,1,1,
+164,Nader ouechtati,rue de paris centre ville,lac3,10,1,1,1203.0
+164,JOHNSON MAXIME,Manar 1,lac3,10,1,1,
+164,Bounakcha Maha,Saida,lac3,10,1,1,
+165,Hosni Briki,Urgence hbib thamer,lac3,10,1,1,
+165,Slim mamoghli,Yassminette ben arous,lac3,10,1,1,
+166,Ayari Imen,Jaafer,lac3,10,1,1,7444.0
+166,MAHMOUD SOULAIMA,Ibn Mandhour Ariana,lac3,10,1,1,
+166,RENE RICHARD,ENNASR 1,lac3,10,1,1,
+167,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,1,1,
+167,SAID MARWA,lac3,Ibn Mandhour Ariana,19,1,1,
+167,HAIFA BENZARTI,lac3,DENDEN,19,1,1,7830.0
+167,MAHMOUD SOULAIMA,lac3,Ibn Mandhour Ariana,19,1,1,6817.0
+168,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,1,1,
+168,Ayari Imen,lac3,Jaafer,19,1,1,10568.0
+168,SAHAR EL FAIRES,lac3,Cité saha,19,1,1,
+168,GHAZI REKIK,lac3,Cité wahat l'aouina,19,1,1,
+169,ELSA DJIM,lac3,Manar 1,19,1,1,
+169,JOHNSON MAXIME,lac3,Manar 1,19,1,1,
+169,Gammoudi Oumaima,lac3,cité etadhamen,19,1,1,
+169,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,1,1,1042.0
+170,NUMBI NAAY FEARISS,lac3,cité el mile7a,19,1,1,2742.0
+170,HAJRI HATEM,lac3,MEDINA JADIDA,19,1,1,
+170,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,1,1,
+170,Yousra Houiji,lac3,Cité bennacer manouba,19,1,1,1203.0
+171,claude noah,lac3,menzeh 5 café jardin,19,1,1,
+171,WISSEM NAMOUCHI,lac3,Menzeh 7,19,1,1,
+171,Zied Aboud,lac3,Menzeh 7,19,1,1,
+171,Ghouibi Hanen,lac3,Cite el kadhra,19,1,1,
+172,EYA ARFAOUI,lac3,Mourouj 4,19,1,1,
+172,Youssef ayachi,lac3,centre ville,19,1,1,
+172,AOUATEF CHAOUALI,lac3,borj louzir,19,1,1,
+172,Wael Thabet,lac3,Mousqué Errawdha,19,1,1,626.0
+173,MARWA WARTENI,lac3,Ben arous,19,1,1,
+173,Djossou Rogel,lac3,Nour Jaafer,19,1,1,
+173,HEND AJEJ,lac3,Bhar lazrek,19,1,1,
+173,Beni henriette,lac3,Bhar lazrek,19,1,1,10050.0
+174,MEHDI BEDHIAFI,lac3,Ouardia,19,1,1,
+174,MALEK MARSAOUI,lac3,Beb Laassal,19,1,1,
+174,SIWAR JELJLI,lac3,BARDO,19,1,1,
+174,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,1,1,
+175,Nader ouechtati,lac3,rue de paris centre ville,19,1,1,
+175,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,1,1,
+175,KHAWLA JERBI,lac3,ARIANA,19,1,1,
+175,SABRINE SASSI,lac3,Rond-point Khaznadar,19,1,1,
+176,Slim mamoghli,lac3,Yassminette ben arous,19,1,1,5696.0
+176,Bounakcha Maha,lac3,Saida,19,1,1,
+177,WISSEM NAMOUCHI,Menzeh 7,lac3,10,2,1,
+177,claude noah,menzeh 5 café jardin,lac3,10,2,1,
+177,Zied Aboud,Menzeh 7,lac3,10,2,1,1615.0
+177,MEHDI BEDHIAFI,Ouardia,lac3,10,2,1,5696.0
+178,ELSA DJIM,Manar 1,lac3,10,2,1,
+178,Nader ouechtati,rue de paris centre ville,lac3,10,2,1,
+178,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,2,1,
+178,HAJRI HATEM,MEDINA JADIDA,lac3,10,2,1,
+179,Bounakcha Maha,Saida,lac3,10,2,1,
+179,Slim mamoghli,Yassminette ben arous,lac3,10,2,1,
+179,JOHNSON MAXIME,Manar 1,lac3,10,2,1,
+179,Hosni Briki,Urgence hbib thamer,lac3,10,2,1,
+180,MAHMOUD SOULAIMA,Ibn Mandhour Ariana,lac3,10,2,1,
+180,Ayari Imen,Jaafer,lac3,10,2,1,7444.0
+180,RENE RICHARD,ENNASR 1,lac3,10,2,1,
+181,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,2,1,
+181,Beni henriette,Bhar lazrek,lac3,10,2,1,
+181,Yousra Houiji,cité bennacer manouba,lac3,10,2,1,2900.0
+181,MARWA WARTENI,Ben arous,lac3,10,2,1,
+182,MALEK MARSAOUI,Beb Laassal,lac3,10,2,1,
+182,Gammoudi Oumaima,cité etadhamen,lac3,10,2,1,8818.0
+182,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,2,1,
+182,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,2,1,
+183,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,2,1,
+183,GHAZI REKIK,Cité wahat l'aouina,lac3,10,2,1,
+183,SAHAR EL FAIRES,Cité saha,lac3,10,2,1,7212.0
+183,SIWAR JELJLI,BARDO,lac3,10,2,1,
+184,HAIFA BENZARTI,DENDEN,lac3,10,2,1,
+184,KHAWLA JERBI,ARIANA,lac3,10,2,1,
+184,EYA RAHMOUNI,Djbal Jeloud,lac3,10,2,1,
+184,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,2,1,
+185,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,2,1,1203.0
+186,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,2,1,
+186,SAHAR EL FAIRES,lac3,Cité saha,19,2,1,
+186,GHAZI REKIK,lac3,Cité wahat l'aouina,19,2,1,
+186,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,2,1,
+187,SAID MARWA,lac3,Ibn Mandhour Ariana,19,2,1,
+187,MAHMOUD SOULAIMA,lac3,Ibn Mandhour Ariana,19,2,1,6817.0
+187,JENDOUBI BOUTHAYNA,lac3,Cité nacer 3 mnihla,19,2,1,1203.0
+187,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,2,1,
+188,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,2,1,10050.0
+188,Gammoudi Oumaima,lac3,Cité etadhamen,19,2,1,
+188,Yousra Houiji,lac3,Cité bennacer manouba,19,2,1,2742.0
+188,Ayari Imen,lac3,Jaafer,19,2,1,10568.0
+189,HAJRI HATEM,lac3,MEDINA JADIDA,19,2,1,
+189,ELSA DJIM,lac3,Manar 1,19,2,1,
+189,JOHNSON MAXIME,lac3,Manar 1,19,2,1,
+189,Ghouibi Hanen,lac3,Cite el kadhra,19,2,1,1654.0
+190,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,2,1,
+190,OMRANI HEJER,lac3,BOUMHAL,19,2,1,5696.0
+190,claude noah,lac3,menzeh 5 café jardin,19,2,1,
+190,Zied Aboud,lac3,Menzeh 7,19,2,1,
+191,Beni henriette,lac3,Bhar lazrek,19,2,1,
+191,HEND AJEJ,lac3,Bhar lazrek,19,2,1,1906.0
+191,AOUATEF CHAOUALI,lac3,borj louzir,19,2,1,
+191,EYA ARFAOUI,lac3,Mourouj 4,19,2,1,
+192,SIWAR JELJLI,lac3,BARDO,19,2,1,
+192,Wael Thabet,lac3,Mousqué Errawdha,19,2,1,1042.0
+192,Djossou Rogel,lac3,Nour Jaafer,19,2,1,
+192,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,2,1,
+193,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,2,1,
+193,MEHDI BEDHIAFI,lac3,Ouardia,19,2,1,
+193,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,2,1,
+193,KHAWLA JERBI,lac3,ARIANA,19,2,1,
+194,Bounakcha Maha,lac3,Saida,19,2,1,
+194,Nader ouechtati,lac3,Rue de paris centre-ville,19,2,1,1941.0
+195,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,3,1,
+195,HEND AJEJ,Bhar lazrek,lac3,10,3,1,1042.0
+195,Beni henriette,Bhar lazrek,lac3,10,3,1,
+195,MARWA WARTENI,Ben arous,lac3,10,3,1,
+196,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,3,1,
+196,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,3,1,
+196,Gammoudi Oumaima,cité etadhamen,lac3,10,3,1,1615.0
+196,MALEK MARSAOUI,Beb Laassal,lac3,10,3,1,
+197,SAHAR EL FAIRES,Cité saha,lac3,10,3,1,7212.0
+197,JENDOUBI BOUTHAYNA,Cité nacer 3 mnihla,lac3,10,3,1,8818.0
+197,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,3,1,
+197,GHAZI REKIK,Cité wahat l'aouina,lac3,10,3,1,
+198,EYA RAHMOUNI,Djbal Jeloud,lac3,10,3,1,
+198,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,3,1,
+198,HAIFA BENZARTI,DENDEN,lac3,10,3,1,
+198,SIWAR JELJLI,BARDO,lac3,10,3,1,
+199,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,3,1,461.0
+199,KHAWLA JERBI,ARIANA,lac3,10,3,1,8375.0
+200,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,3,1,
+200,MEHDI BEDHIAFI,Ouardia,lac3,10,3,1,5696.0
+200,claude noah,menzeh 5 café jardin,lac3,10,3,1,
+200,Zied Aboud,Menzeh 7,lac3,10,3,1,
+201,JOHNSON MAXIME,Manar 1,lac3,10,3,1,
+201,Nader ouechtati,rue de paris centre ville,lac3,10,3,1,
+201,HAJRI HATEM,MEDINA JADIDA,lac3,10,3,1,
+201,ELSA DJIM,Manar 1,lac3,10,3,1,
+202,Slim mamoghli,Yassminette ben arous,lac3,10,3,1,
+202,Bounakcha Maha,Saida,lac3,10,3,1,
+203,SAID MARWA,Ibn Mandhour Ariana,lac3,10,3,1,
+203,MAHMOUD SOULAIMA,Ibn Mandhour Ariana,lac3,10,3,1,
+204,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,3,1,
+204,SAHAR EL FAIRES,lac3,Cité saha,19,3,1,
+204,GHAZI REKIK,lac3,Cité wahat l'aouina,19,3,1,
+204,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,3,1,1941.0
+205,Gammoudi Oumaima,lac3,Cité etadhamen,19,3,1,
+205,MAHMOUD SOULAIMA,lac3,Ibn Mandhour Ariana,19,3,1,6817.0
+205,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,3,1,
+205,SAID MARWA,lac3,Ibn Mandhour Ariana,19,3,1,
+206,Ghouibi Hanen,lac3,Cite el kadhra,19,3,1,1042.0
+206,JOHNSON MAXIME,lac3,Manar 1,19,3,1,
+206,Ayari Imen,lac3,Jaafer,19,3,1,1665.0
+206,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,3,1,1203.0
+207,OMRANI HEJER,lac3,BOUMHAL,19,3,1,5696.0
+207,ELSA DJIM,lac3,Manar 1,19,3,1,
+207,claude noah,lac3,menzeh 5 café jardin,19,3,1,
+207,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,3,1,
+208,AOUATEF CHAOUALI,lac3,borj louzir,19,3,1,
+208,EYA ARFAOUI,lac3,Mourouj 4,19,3,1,
+208,Beni henriette,lac3,Bhar lazrek,19,3,1,
+208,HEND AJEJ,lac3,Bhar lazrek,19,3,1,1906.0
+209,Wael Thabet,lac3,Mousqué Errawdha,19,3,1,10050.0
+209,SIWAR JELJLI,lac3,BARDO,19,3,1,
+209,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,3,1,
+209,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,3,1,
+210,MEHDI BEDHIAFI,lac3,Ouardia,19,3,1,
+210,Djossou Rogel,lac3,Nour Jaafer,19,3,1,
+210,KHAWLA JERBI,lac3,ARIANA,19,3,1,
+210,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,3,1,
+211,Nader ouechtati,lac3,Rue de paris centre-ville,19,3,1,
+211,Bounakcha Maha,lac3,Saida,19,3,1,
+212,Zied Aboud,Menzeh 7,lac3,10,4,1,
+212,MEHDI BEDHIAFI,Ouardia,lac3,10,4,1,5696.0
+212,claude noah,menzeh 5 café jardin,lac3,10,4,1,
+212,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,4,1,
+213,Nader ouechtati,rue de paris centre ville,lac3,10,4,1,
+213,ELSA DJIM,Manar 1,lac3,10,4,1,
+213,Bounakcha Maha,Saida,lac3,10,4,1,
+213,JOHNSON MAXIME,Manar 1,lac3,10,4,1,
+214,Hosni Briki,Urgence hbib thamer,lac3,10,4,1,
+215,Beni henriette,Bhar lazrek,lac3,10,4,1,
+215,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,4,1,8375.0
+215,MARWA WARTENI,Ben arous,lac3,10,4,1,
+215,Yousra Houiji,cité bennacer manouba,lac3,10,4,1,2900.0
+216,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,4,1,
+216,Gammoudi Oumaima,cité etadhamen,lac3,10,4,1,1203.0
+216,MALEK MARSAOUI,Beb Laassal,lac3,10,4,1,
+216,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,4,1,8818.0
+217,SIWAR JELJLI,BARDO,lac3,10,4,1,
+217,SAHAR EL FAIRES,Cité saha,lac3,10,4,1,
+217,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,4,1,
+217,GHAZI REKIK,Cité wahat l'aouina,lac3,10,4,1,
+218,EYA RAHMOUNI,Djbal Jeloud,lac3,10,4,1,
+218,KHAWLA JERBI,ARIANA,lac3,10,4,1,
+218,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,4,1,
+218,HAIFA BENZARTI,DENDEN,lac3,10,4,1,
+219,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,4,1,1615.0
+220,MAHMOUD SOULAIMA,Ibn Mandhour Ariana,lac3,10,4,1,
+220,Ayari Imen,Jaafer,lac3,10,4,1,
+221,SAHAR EL FAIRES,lac3,Cité saha,19,4,1,
+221,HAIFA BENZARTI,lac3,DENDEN,19,4,1,2742.0
+221,GHAZI REKIK,lac3,Cité wahat l'aouina,19,4,1,
+221,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,4,1,
+222,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,4,1,
+222,Gammoudi Oumaima,lac3,Cité etadhamen,19,4,1,
+222,Ayari Imen,lac3,Jaafer,19,4,1,10568.0
+222,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,4,1,
+223,claude noah,lac3,menzeh 5 café jardin,19,4,1,
+223,ELSA DJIM,lac3,Manar 1,19,4,1,1042.0
+223,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,4,1,
+223,JOHNSON MAXIME,lac3,Manar 1,19,4,1,
+224,AOUATEF CHAOUALI,lac3,borj louzir,19,4,1,
+224,OMRANI HEJER,lac3,BOUMHAL,19,4,1,5696.0
+224,Zied Aboud,lac3,Menzeh 7,19,4,1,1203.0
+224,EYA ARFAOUI,lac3,Mourouj 4,19,4,1,
+225,HEND AJEJ,lac3,Bhar lazrek,19,4,1,
+225,Beni henriette,lac3,Bhar lazrek,19,4,1,1941.0
+225,Wael Thabet,lac3,Mousqué Errawdha,19,4,1,10050.0
+225,Hend BEN NASSER,lac3,Mourouj 6,19,4,1,
+226,MEHDI BEDHIAFI,lac3,Ouardia,19,4,1,
+226,Djossou Rogel,lac3,Nour Jaafer,19,4,1,
+226,KIMINI KHEY SAVIENDRA,lac3,Beb Laassal,19,4,1,
+226,Youssef ayachi,lac3,Mousqué Errawdha,19,4,1,
+227,SIWAR JELJLI,lac3,BARDO,19,4,1,
+227,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,4,1,
+227,KHAWLA JERBI,lac3,ARIANA,19,4,1,6817.0
+227,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,4,1,
+228,Nader ouechtati,lac3,Rue de paris centre-ville,19,4,1,
+228,Bounakcha Maha,lac3,Saida,19,4,1,1665.0
+229,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,0,1,
+229,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,0,1,
+229,SAHAR EL FAIRES,Cité saha,lac3,10,0,1,
+229,Gammoudi Oumaima,cité etadhamen,lac3,10,0,1,8818.0
+230,AOUATEF CHAOUALI,borj louzir,lac3,10,0,1,7212.0
+230,OMRANI HEJER,BOUMHAL,lac3,10,0,1,
+230,Yousra Houiji,cité bennacer manouba,lac3,10,0,1,2900.0
+230,Ghouibi Hanen,Cite el kadhra,lac3,10,0,1,
+231,MARWA WARTENI,Ben arous,lac3,10,0,1,
+231,Beni henriette,Bhar lazrek,lac3,10,0,1,
+231,HEND AJEJ,Bhar lazrek,lac3,10,0,1,
+231,Amel,ECR Alain Savary,lac3,10,0,1,
+232,SIWAR JELJLI,BARDO,lac3,10,0,1,
+232,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,0,1,
+232,MALEK MARSAOUI,Beb Laassal,lac3,10,0,1,
+232,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,0,1,
+233,KHAWLA JERBI,ARIANA,lac3,10,0,1,
+233,MARWEN NASER,FOUCHENA,lac3,10,0,1,7830.0
+233,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,0,1,461.0
+233,RENE RICHARD,ENNASR 1,lac3,10,0,1,
+234,SOUHIR KERRIT,Hafsia Rue Tronja,lac3,10,0,1,1941.0
+234,Refka wertani,hammam chat,lac3,10,0,1,5696.0
+234,MAHMOUD SOULAIMA,Ibn Mandhour Ariana,lac3,10,0,1,8375.0
+234,Ayari Imen,Jaafer,lac3,10,0,1,
+235,Zied Aboud,Menzeh 7,lac3,10,0,1,
+235,claude noah,menzeh 5 café jardin,lac3,10,0,1,
+235,Djossou Rogel,Nour Jaafer,lac3,10,0,1,7444.0
+235,MEHDI BEDHIAFI,Ouardia,lac3,10,0,1,2742.0
+236,Nader ouechtati,rue de paris centre ville,lac3,10,0,1,
+236,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,0,1,
+236,JOHNSON MAXIME,Manar 1,lac3,10,0,1,
+236,ELSA DJIM,Manar 1,lac3,10,0,1,
+237,mohamed ali suissi,sidi bousaid,lac3,10,0,1,1042.0
+237,Bounakcha Maha,Saida,lac3,10,0,1,
+238,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,0,1,
+238,SIWAR JELJLI,lac3,BARDO,19,0,1,
+238,OMRANI HEJER,lac3,BOUMHAL,19,0,1,
+238,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,0,1,2742.0
+239,KHAWLA JERBI,lac3,ARIANA,19,0,1,
+239,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,0,1,
+239,Ghouibi Hanen,lac3,Cite el kadhra,19,0,1,1203.0
+239,Gammoudi Oumaima,lac3,Cité etadhamen,19,0,1,
+240,AZIZ BEN ABDELFAFIDH,lac3,AOUINA,19,0,1,10050.0
+240,SAHAR EL FAIRES,lac3,Cité saha,19,0,1,1615.0
+240,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,0,1,
+240,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,0,1,
+241,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,0,1,
+241,EYA RAHMOUNI,lac3,Djbal Jeloud,19,0,1,
+241,GHAZI REKIK,lac3,Cité wahat l'aouina,19,0,1,
+241,HAIFA BENZARTI,lac3,DENDEN,19,0,1,
+242,smiri mehrzeya,ECR Alain Savary,sokra,19,0,1,7212.0
+242,RENE RICHARD,lac3,ENNASR 1,19,0,1,
+242,REFKA OUERTANI,lac3,HAMMEM CHATT,19,0,1,5696.0
+242,MARWEN NASER,lac3,FOUCHENA,19,0,1,3744.0
+243,ELSA DJIM,lac3,Manar 1,19,0,1,
+243,JOHNSON MAXIME,lac3,Manar 1,19,0,1,
+243,Ayari Imen,lac3,Jaafer,19,0,1,10568.0
+243,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,0,1,
+244,Sofien nefzi,ECR Alain Savary,nogra,19,0,1,
+244,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,0,1,
+244,claude noah,lac3,menzeh 5 café jardin,19,0,1,
+244,Zied Aboud,lac3,Menzeh 7,19,0,1,6817.0
+245,EYA ARFAOUI,lac3,Mourouj 4,19,0,1,
+245,MEHDI BEDHIAFI,lac3,Ouardia,19,0,1,
+245,Djossou Rogel,lac3,Nour Jaafer,19,0,1,
+245,HEND BEN NSSER,lac3,MOUROUJ 6,19,0,1,
+246,aymen abedlkhalak,ECR Alain Savary,hay el saha ariana,19,0,1,1946.0
+246,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,0,1,
+246,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,0,1,
+246,abda rihab,ECR Alain Savary,l aouina hay l wahat,19,0,1,
+247,MBISSA SAINTICHE,lac3,RUE MOKHTAR ATTIA CENTRE VILLE,19,0,1,1941.0
+247,Nader ouechtati,lac3,Rue de paris centre-ville,19,0,1,
+247,habiba hedhili,ECR Alain Savary,hay el mileha,19,0,1,
+247,HALIMA BOUFENECH,ECR Alain Savary,Ezzahrouni (devant lycée),19,0,1,2445.0
+248,LAYLA,ECR Alain Savary,Ezzahrouni,19,0,1,
+248,El Arbi Saber,ECR Alain Savary,Denden,19,0,1,
+248,Bounakcha Maha,lac3,Saida,19,0,1,
+248,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,0,1,
+249,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,0,1,
+249,wherghi khaoula,ECR Alain Savary,cite militaire l aouina,19,0,1,
+249,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,0,1,1042.0
+250,RENE RICHARD,ENNASR 1,lac3,10,1,1,
+250,MAHMOUD SOULAIMA,Ibn Mandhour Ariana,lac3,10,1,1,
+251,MARWA WARTENI,Ben arous,lac3,10,1,1,
+251,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,1,1,
+251,Yousra Houiji,cité bennacer manouba,lac3,10,1,1,2900.0
+251,Ghouibi Hanen,Cite el kadhra,lac3,10,1,1,
+252,Gammoudi Oumaima,cité etadhamen,lac3,10,1,1,1615.0
+252,BOLOU WILFRIE,BEB EL KADHRA,lac3,10,1,1,
+252,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,1,1,
+252,MALEK MARSAOUI,Beb Laassal,lac3,10,1,1,
+253,SIWAR JELJLI,BARDO,lac3,10,1,1,
+253,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,1,1,
+253,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,1,1,
+253,Ayari Imen,Ariana Ville,lac3,10,1,1,
+254,GHAZI REKIK,Cité wahat l'aouina,lac3,10,1,1,
+254,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,1,1,
+254,SAHAR EL FAIRES,Cité saha,lac3,10,1,1,
+254,HAIFA BENZARTI,DENDEN,lac3,10,1,1,
+255,KHAWLA JERBI,ARIANA,lac3,10,1,1,8375.0
+255,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,1,1,461.0
+255,AZIZ BEN ABDELFAFIDH,AOUINA,lac3,10,1,1,1042.0
+255,EYA RAHMOUNI,Djbal Jeloud,lac3,10,1,1,
+256,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,1,1,
+256,Zied Aboud,Menzeh 7,lac3,10,1,1,1853.0
+256,claude noah,menzeh 5 café jardin,lac3,10,1,1,
+256,MEHDI BEDHIAFI,Ouardia,lac3,10,1,1,1203.0
+257,Nader ouechtati,rue de paris centre ville,lac3,10,1,1,
+257,JOHNSON MAXIME,Manar 1,lac3,10,1,1,
+257,ELSA DJIM,Manar 1,lac3,10,1,1,
+257,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,1,1,7212.0
+258,Bounakcha Maha,Saida,lac3,10,1,1,
+259,NUMBI NAAY FEARISS,lac3,cité el mile7a,19,1,1,9311.0
+259,sofien nefzi,ECR Alain Savary,nogra,19,1,1,1042.0
+259,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,1,1,
+259,Gammoudi Oumaima,lac3,cité etadhamen,19,1,1,
+260,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,1,1,
+260,RENE RICHARD,lac3,ENNASR 1,19,1,1,
+260,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,1,1,2445.0
+260,aymen abedlkhalak,ECR Alain Savary,hay el saha ariana,19,1,1,
+261,El Arbi Saber,ECR Alain Savary,Denden,19,1,1,
+261,HALIMA BOUFENECH,ECR Alain Savary,Ezzahrouni (devant lycée),19,1,1,
+261,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,1,1,
+261,amel jlassi,ECR Alain Savary,ezzahrouni,19,1,1,461.0
+262,Ayari Imen,lac3,Jaafer,19,1,1,10568.0
+262,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,1,1,
+262,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,1,1,
+262,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,1,1,
+263,claude noah,lac3,menzeh 5 café jardin,19,1,1,
+263,ELSA DJIM,lac3,Manar 1,19,1,1,1203.0
+263,JOHNSON MAXIME,lac3,Manar 1,19,1,1,
+263,SEIF ALLAH JEBALI,ECR Alain Savary,ARIANA,19,1,1,1654.0
+264,MEHDI BEDHIAFI,lac3,Ouardia,19,1,1,7830.0
+264,Bounakcha Maha,lac3,Saida,19,1,1,
+264,SAHAR EL FAIRES,lac3,"Résidence Kortouba, Soukra.",19,1,1,
+264,Zied Aboud,lac3,Menzeh 7,19,1,1,
+265,Ayari Imen,Jaafer,lac3,10,2,1,
+265,RIMA HMANI,hôpital militaire,lac3,10,2,1,
+265,RENE RICHARD,ENNASR 1,lac3,10,2,1,
+266,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,2,1,
+266,Ghouibi Hanen,Cite el kadhra,lac3,10,2,1,
+266,bolou wilfried,beb lkhadhra,lac3,10,2,1,
+266,MARWA WARTENI,Ben arous,lac3,10,2,1,
+267,Gammoudi Oumaima,cité etadhamen,lac3,10,2,1,8818.0
+267,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,2,1,
+267,SIWAR JELJLI,BARDO,lac3,10,2,1,5696.0
+267,MALEK MARSAOUI,Beb Laassal,lac3,10,2,1,
+268,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,2,1,8375.0
+268,SAHAR EL FAIRES,Cité saha,lac3,10,2,1,
+268,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,2,1,
+268,souhail grira,ariana nour jaafer,lac3,10,2,1,7444.0
+269,KHAWLA JERBI,ARIANA,lac3,10,2,1,
+269,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,2,1,
+269,GHAZI REKIK,Cité wahat l'aouina,lac3,10,2,1,
+269,EYA RAHMOUNI,Djbal Jeloud,lac3,10,2,1,
+270,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,2,1,461.0
+271,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,2,1,
+271,MEHDI BEDHIAFI,Ouardia,lac3,10,2,1,
+271,claude noah,menzeh 5 café jardin,lac3,10,2,1,
+271,Zied Aboud,Menzeh 7,lac3,10,2,1,
+272,ELSA DJIM,Manar 1,lac3,10,2,1,
+272,JOHNSON MAXIME,Manar 1,lac3,10,2,1,
+272,Nader ouechtati,rue de paris centre ville,lac3,10,2,1,
+272,aziz ben abdelhafidh,laouina,lac3,10,2,1,
+273,Hosni Briki,Urgence hbib thamer,lac3,10,2,1,
+273,Bounakcha Maha,Saida,lac3,10,2,1,1615.0
+274,SIWAR JELJLI,lac3,BARDO,19,2,1,
+274,YOUSSEF AYACHI,lac3,borj louzir,19,2,1,10050.0
+274,OMRANI HEJER,lac3,BOUMHAL,19,2,1,
+274,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,2,1,
+275,AZIZ BEN ABDELFAFIDH,lac3,AOUINA,19,2,1,7212.0
+275,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,2,1,
+275,Ghouibi Hanen,lac3,Cite el kadhra,19,2,1,
+275,KHAWLA JERBI,lac3,ARIANA,19,2,1,
+276,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,2,1,
+276,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,2,1,
+276,Gammoudi Oumaima,lac3,Cité etadhamen,19,2,1,
+276,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,2,1,
+277,HAIFA BENZARTI,lac3,DENDEN,19,2,1,
+277,SAHAR EL FAIRES,lac3,Cité saha,19,2,1,1654.0
+277,GHAZI REKIK,lac3,Cité wahat l'aouina,19,2,1,
+277,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,2,1,
+278,MARWEN NASER,lac3,FOUCHENA,19,2,1,3744.0
+278,RENE RICHARD,lac3,ENNASR 1,19,2,1,
+278,EYA RAHMOUNI,lac3,Djbal Jeloud,19,2,1,
+278,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,2,1,1941.0
+279,mayada sdghiani,ECR Alain Savary,sokra,19,2,1,
+279,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,2,1,
+279,REFKA OUERTANI,lac3,HAMMEM CHATT,19,2,1,5696.0
+279,Hmani Loubna,lac3,Hopital militaire Tunis,19,2,1,7830.0
+280,Ayari Imen,lac3,Jaafer,19,2,1,
+280,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,2,1,2445.0
+280,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,2,1,1946.0
+280,Hmani Loubna,lac3,Hopital militaire Tunis,19,2,1,10050.0
+281,Beni henriette,lac3,l'aouina,19,2,1,
+281,sofien nefzi,ECR Alain Savary,nogra,19,2,1,
+281,ELSA DJIM,lac3,Manar 1,19,2,1,1203.0
+281,Hosni Briki.,lac3,l’Urgence Habib Thamer,19,2,1,2742.0
+282,JOHNSON MAXIME,lac3,Manar 1,19,2,1,
+282,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,2,1,
+282,claude noah,lac3,menzeh 5 café jardin,19,2,1,
+282,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,2,1,
+283,HEND BEN NSSER,lac3,MOUROUJ 6,19,2,1,
+283,Zied Aboud,lac3,Menzeh 7,19,2,1,2852.0
+283,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,2,1,1906.0
+283,EYA ARFAOUI,lac3,Mourouj 4,19,2,1,
+284,Wael Thabet,lac3,Mousqué Errawdha,19,2,1,
+284,MEHDI BEDHIAFI,lac3,Ouardia,19,2,1,
+284,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,2,1,1398.0
+284,Djossou Rogel,lac3,Nour Jaafer,19,2,1,
+285,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,2,1,
+285,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,2,1,
+285,Sahar Elfaires,lac3,Residence Kodoba Soukra,19,2,1,
+285,aymen abedlkhalak,ECR Alain Savary,hay el saha ariana,19,2,1,
+286,arwa el younsi,ECR Alain Savary,hay el khadhra,19,2,1,
+286,Nader ouechtati,lac3,Rue de paris centre-ville,19,2,1,
+286,HALIMA BOUFENECH,ECR Alain Savary,Ezzahrouni (devant lycée),19,2,1,
+286,habiba hedhili,ECR Alain Savary,hay el mileha,19,2,1,
+287,sirine maaroufi,ECR Alain Savary,el omran superieur,19,2,1,1042.0
+287,LAYLA,ECR Alain Savary,Ezzahrouni,19,2,1,
+287,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,2,1,
+287,Bounakcha Maha,lac3,Saida,19,2,1,
+288,El Arbi Saber,ECR Alain Savary,Denden,19,2,1,461.0
+288,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,2,1,
+288,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,2,1,
+288,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,2,1,
+289,Amel,Ezzahrouni,lac3,10,3,1,461.0
+289,RENE RICHARD,ENNASR 1,lac3,10,3,1,
+289,Beni henriette,L'AOUINA,lac3,10,3,1,
+290,Ghouibi Hanen,Cite el kadhra,lac3,10,3,1,
+290,MALEK MARSAOUI,Beb Laassal,lac3,10,3,1,
+290,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,3,1,
+290,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,3,1,
+291,SIWAR JELJLI,BARDO,lac3,10,3,1,
+291,Gammoudi Oumaima,cité etadhamen,lac3,10,3,1,8818.0
+291,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,3,1,
+291,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,3,1,
+292,SAHAR EL FAIRES,Cité saha,lac3,10,3,1,
+292,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,3,1,8375.0
+292,GHAZI REKIK,Cité wahat l'aouina,lac3,10,3,1,
+292,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,3,1,
+293,KHAWLA JERBI,ARIANA,lac3,10,3,1,
+293,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,3,1,7212.0
+293,HAIFA BENZARTI,DENDEN,lac3,10,3,1,
+293,EYA RAHMOUNI,Djbal Jeloud,lac3,10,3,1,
+294,SABRINE SASSI,20 mars sidi hssin,lac3,10,3,1,
+295,claude noah,menzeh 5 café jardin,lac3,10,3,1,
+295,Zied Aboud,Menzeh 7,lac3,10,3,1,1615.0
+295,Djossou Rogel,Nour Jaafer,lac3,10,3,1,7444.0
+295,MEHDI BEDHIAFI,Ouardia,lac3,10,3,1,5696.0
+296,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,3,1,
+296,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,3,1,
+296,JOHNSON MAXIME,Manar 1,lac3,10,3,1,
+296,ELSA DJIM,Manar 1,lac3,10,3,1,
+297,Nader ouechtati,rue de paris centre ville,lac3,10,3,1,
+297,Bounakcha Maha,Saida,lac3,10,3,1,
+298,MALEK MARSAOUI,lac3,Beb Laassal,19,3,1,
+298,AZIZ BEN ABDELFAFIDH,lac3,AOUINA,19,3,1,7212.0
+298,KHAWLA JERBI,lac3,ARIANA,19,3,1,1654.0
+298,MARWA WARTENI,lac3,Ben arous,19,3,1,
+299,YOUSSEF AYACHI,lac3,borj louzir,19,3,1,
+299,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,3,1,
+299,AOUATEF CHAOUALI,lac3,borj louzir,19,3,1,
+299,OMRANI HEJER,lac3,BOUMHAL,19,3,1,
+300,Gammoudi Oumaima,lac3,Cité etadhamen,19,3,1,
+300,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,3,1,1853.0
+300,Ghouibi Hanen,lac3,Cite el kadhra,19,3,1,
+300,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,3,1,
+301,EYA RAHMOUNI,lac3,Djbal Jeloud,19,3,1,6817.0
+301,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,3,1,
+301,HAIFA BENZARTI,lac3,DENDEN,19,3,1,
+301,GHAZI REKIK,lac3,Cité wahat l'aouina,19,3,1,
+302,RENE RICHARD,lac3,ENNASR 1,19,3,1,
+302,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,3,1,
+302,MARWEN NASER,lac3,FOUCHENA,19,3,1,3744.0
+302,mayada sdghiani,ECR Alain Savary,sokra,19,3,1,
+303,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,3,1,
+303,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,3,1,2852.0
+303,REFKA OUERTANI,lac3,HAMMEM CHATT,19,3,1,5696.0
+303,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,3,1,1941.0
+304,sofien nefzi,ECR Alain Savary,nogra,19,3,1,
+304,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,3,1,
+304,Ayari Imen,lac3,Jaafer,19,3,1,
+304,Beni henriette,lac3,l'aouina,19,3,1,
+305,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,3,1,
+305,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,3,1,2708.0
+305,JOHNSON MAXIME,lac3,Manar 1,19,3,1,1203.0
+305,ELSA DJIM,lac3,Manar 1,19,3,1,
+306,claude noah,lac3,menzeh 5 café jardin,19,3,1,
+306,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,3,1,
+306,HEND BEN NSSER,lac3,MOUROUJ 6,19,3,1,
+306,EYA ARFAOUI,lac3,Mourouj 4,19,3,1,
+307,Wael Thabet,lac3,Mousqué Errawdha,19,3,1,10568.0
+307,Djossou Rogel,lac3,Nour Jaafer,19,3,1,
+307,aymen abedlkhalak,ECR Alain Savary,hay el saha ariana,19,3,1,
+307,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,3,1,9762.0
+308,HALIMA BOUFENECH,ECR Alain Savary,Ezzahrouni (devant lycée),19,3,1,
+308,MEHDI BEDHIAFI,lac3,Ouardia,19,3,1,
+308,arwa el younsi,ECR Alain Savary,hay el khadhra,19,3,1,
+308,habiba hedhili,ECR Alain Savary,hay el mileha,19,3,1,1042.0
+309,sirine maaroufi,ECR Alain Savary,el omran superieur,19,3,1,
+309,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,3,1,
+309,El Arbi Saber,ECR Alain Savary,Denden,19,3,1,461.0
+309,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,3,1,
+310,Nader ouechtati,lac3,Rue de paris centre-ville,19,3,1,
+310,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,3,1,
+310,LAYLA,ECR Alain Savary,cité zouhour,19,3,1,
+310,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,3,1,
+311,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,3,1,1799.0
+311,Bounakcha Maha,lac3,Saida,19,3,1,
+312,Hmani Loubna,Hopital militaire Tunis,lac3,10,4,1,
+312,Ayari Imen,Jaafer,lac3,10,4,1,1853.0
+312,RENE RICHARD,ENNASR 1,lac3,10,4,1,
+313,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,4,1,
+313,Ghouibi Hanen,Cite el kadhra,lac3,10,4,1,
+313,MARWA WARTENI,Ben arous,lac3,10,4,1,
+313,MALEK MARSAOUI,Beb Laassal,lac3,10,4,1,
+314,Gammoudi Oumaima,cité etadhamen,lac3,10,4,1,8818.0
+314,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,4,1,
+314,SIWAR JELJLI,BARDO,lac3,10,4,1,
+314,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,4,1,1203.0
+315,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,4,1,
+315,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,4,1,
+315,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,4,1,
+315,SAHAR EL FAIRES,Cité saha,lac3,10,4,1,
+316,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,4,1,
+316,GHAZI REKIK,Cité wahat l'aouina,lac3,10,4,1,
+316,EYA RAHMOUNI,Djbal Jeloud,lac3,10,4,1,
+316,KHAWLA JERBI,ARIANA,lac3,10,4,1,
+317,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,4,1,8375.0
+318,Zied Aboud,Menzeh 7,lac3,10,4,1,1615.0
+318,MEHDI BEDHIAFI,Ouardia,lac3,10,4,1,5696.0
+318,claude noah,menzeh 5 café jardin,lac3,10,4,1,
+318,Djossou Rogel,Nour Jaafer,lac3,10,4,1,
+319,JOHNSON MAXIME,Manar 1,lac3,10,4,1,
+319,ELSA DJIM,Manar 1,lac3,10,4,1,
+319,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,4,1,
+319,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,4,1,
+320,Nader ouechtati,rue de paris centre ville,lac3,10,4,1,
+320,Bounakcha Maha,Saida,lac3,10,4,1,
+321,KHAWLA JERBI,lac3,ARIANA,19,4,1,
+321,AOUATEF CHAOUALI,lac3,borj louzir,19,4,1,
+321,HEND AJEJ,lac3,Bhar lazrek,19,4,1,7212.0
+321,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,4,1,
+322,YOUSSEF AYACHI,lac3,chotrana,19,4,1,
+322,OMRANI HEJER,lac3,BOUMHAL,19,4,1,
+322,AZIZ BEN DHIFALLAH,lac3,AOUINA,19,4,1,
+322,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,4,1,2742.0
+323,Gammoudi Oumaima,lac3,Cité etadhamen,19,4,1,
+323,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,4,1,
+323,Ghouibi Hanen,lac3,Cite el kadhra,19,4,1,
+323,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,4,1,10050.0
+324,GHAZI REKIK,lac3,Cité wahat l'aouina,19,4,1,
+324,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,4,1,
+324,SAHAR EL FAIRES,lac3,Cité saha,19,4,1,6817.0
+324,EYA RAHMOUNI,lac3,Djbal Jeloud,19,4,1,
+325,MARWEN NASER,lac3,FOUCHENA,19,4,1,3744.0
+325,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,4,1,
+325,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,4,1,
+325,mayada sdghiani,ECR Alain Savary,sokra,19,4,1,
+326,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,4,1,2445.0
+326,REFKA OUERTANI,lac3,HAMMEM CHATT,19,4,1,5696.0
+326,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,4,1,1799.0
+326,Hmani Loubna,lac3,Hopital militaire Tunis,19,4,1,
+327,Beni henriette,lac3,l'aouina,19,4,1,
+327,sofien nefzi,ECR Alain Savary,nogra,19,4,1,
+327,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,4,1,2708.0
+327,Ayari Imen,lac3,Jaafer,19,4,1,
+328,HALIMA BOUFENECH,ECR Alain Savary,MNIHLA,19,4,1,
+328,ELSA DJIM,lac3,Manar 1,19,4,1,
+328,JOHNSON MAXIME,lac3,Manar 1,19,4,1,
+328,aymen abedlkhalak,ECR Alain Savary,MONFLEURY,19,4,1,
+329,Zied Aboud,lac3,Menzeh 7,19,4,1,1665.0
+329,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,4,1,
+329,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,4,1,
+329,claude noah,lac3,menzeh 5 café jardin,19,4,1,
+330,EYA ARFAOUI,lac3,Mourouj 4,19,4,1,
+330,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,4,1,1615.0
+330,Wael Thabet,lac3,Mousqué Errawdha,19,4,1,
+330,HEND BEN NASR,lac3,MOUROUJ 6,19,4,1,
+331,MEHDI BEDHIAFI,lac3,Ouardia,19,4,1,1654.0
+331,habiba hedhili,ECR Alain Savary,hay el mileha,19,4,1,
+331,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,4,1,10568.0
+331,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,4,1,
+332,sirine maaroufi,ECR Alain Savary,el omran superieur,19,4,1,287.0
+332,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,4,1,2852.0
+332,Nader ouechtati,lac3,Rue de paris centre-ville,19,4,1,1941.0
+332,LAYLA,ECR Alain Savary,Ezzahrouni,19,4,1,
+333,El Arbi Saber,ECR Alain Savary,Denden,19,4,1,
+333,Bounakcha Maha,lac3,Saida,19,4,1,
+333,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,4,1,
+333,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,4,1,
+334,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,4,1,
+335,RENE RICHARD,ENNASR 1,lac3,10,0,1,
+335,Hmani Loubna,Hopital militaire Tunis,lac3,10,0,1,
+336,MALEK MARSAOUI,Beb Laassal,lac3,10,0,1,
+336,MARWA WARTENI,Ben arous,lac3,10,0,1,
+336,Ghouibi Hanen,Cite el kadhra,lac3,10,0,1,
+336,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,0,1,
+337,SIWAR JELJLI,BARDO,lac3,10,0,1,
+337,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,0,1,
+337,Gammoudi Oumaima,cité etadhamen,lac3,10,0,1,1203.0
+337,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,0,1,8375.0
+338,SAHAR EL FAIRES,Cité saha,lac3,10,0,1,
+338,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,0,1,
+338,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,0,1,
+338,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,0,1,
+339,EYA RAHMOUNI,Djbal Jeloud,lac3,10,0,1,
+339,GHAZI REKIK,Cité wahat l'aouina,lac3,10,0,1,
+339,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,0,1,
+339,KHAWLA JERBI,ARIANA,lac3,10,0,1,
+340,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,0,1,461.0
+341,claude noah,menzeh 5 café jardin,lac3,10,0,1,
+341,Zied Aboud,Menzeh 7,lac3,10,0,1,2742.0
+341,Djossou Rogel,Nour Jaafer,lac3,10,0,1,
+341,MEHDI BEDHIAFI,Ouardia,lac3,10,0,1,3744.0
+342,JOHNSON MAXIME,Manar 1,lac3,10,0,1,
+342,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,0,1,
+342,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,0,1,7444.0
+342,ELSA DJIM,Manar 1,lac3,10,0,1,
+343,Nader ouechtati,rue de paris centre ville,lac3,10,0,1,
+343,Bounakcha Maha,Saida,lac3,10,0,1,
+344,HEND AJEJ,lac3,Bhar lazrek,19,0,1,7212.0
+344,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,0,1,10050.0
+344,SIWAR JELJLI,lac3,BARDO,19,0,1,
+344,Beni henriette,lac3,Bhar lazrek,19,0,1,
+345,Ghouibi Hanen,lac3,Cite el kadhra,19,0,1,1203.0
+345,KHAWLA JERBI,lac3,ARIANA,19,0,1,
+345,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,0,1,
+345,AZIZ BEN DHIFALLAH,lac3,AOUINA,19,0,1,
+346,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,0,1,
+346,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,0,1,
+346,Gammoudi Oumaima,lac3,Cité etadhamen,19,0,1,
+346,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,0,1,
+347,EYA RAHMOUNI,lac3,Djbal Jeloud,19,0,1,
+347,AMEL,lac3,Ezzahrouni,19,0,1,
+347,HAIFA BENZARTI,lac3,DENDEN,19,0,1,2742.0
+347,RENE RICHARD,lac3,ENNASR 1,19,0,1,
+348,REFKA OUERTANI,lac3,HAMMEM CHATT,19,0,1,5696.0
+348,MARWEN NASER,lac3,FOUCHENA,19,0,1,2030.0
+348,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,0,1,1941.0
+348,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,0,1,
+349,OMRANI HEJER,lac3,Hammem Lif,19,0,1,
+349,Hmani Loubna,lac3,Hopital militaire Tunis,19,0,1,
+349,mayada sdghiani,ECR Alain Savary,sokra,19,0,1,1799.0
+349,rabeb zammeli,ECR Alain Savary,rades melyen,19,0,1,1398.0
+350,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,0,1,
+350,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,0,1,
+350,Ayari Imen,lac3,Jaafer,19,0,1,10568.0
+350,sofien nefzi,ECR Alain Savary,nogra,19,0,1,2030.0
+351,ELSA DJIM,lac3,Manar 1,19,0,1,
+351,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,0,1,
+351,HALIMA BOUFENECH,ECR Alain Savary,MNIHLA,19,0,1,
+351,JOHNSON MAXIME,lac3,Manar 1,19,0,1,
+352,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,0,1,
+352,EYA ARFAOUI,lac3,Mourouj 4µ,19,0,1,
+352,claude noah,lac3,menzeh 5 café jardin,19,0,1,
+352,Zied Aboud,lac3,Menzeh 7,19,0,1,2968.0
+353,Djossou Rogel,lac3,Nour Jaafer,19,0,1,
+353,Mariem Rahali –,lac3,Nacer 2,19,0,1,
+353,HEND BEN NASR,lac3,MOUROUJ 6,19,0,1,
+353,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,0,1,
+354,MEHDI BEDHIAFI,lac3,Ouardia,19,0,1,1654.0
+354,Seif allah jebali,ECR Alain Savary,jaafar,19,0,1,
+354,aymen abedlkhalak,ECR Alain Savary,HAY EL SAHA ARIANA,19,0,1,
+354,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,0,1,
+355,habiba hedhili,ECR Alain Savary,hay el mileha,19,0,1,
+355,Nader ouechtati,lac3,Rue de paris centre-ville,19,0,1,
+355,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,0,1,
+355,LAYLA,ECR Alain Savary,Ezzahrouni,19,0,1,
+356,El Arbi Saber,ECR Alain Savary,Denden,19,0,1,
+356,sirine maaroufi,ECR Alain Savary,el omran superieur,19,0,1,461.0
+356,Bounakcha Maha,lac3,Saida,19,0,1,
+356,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,0,1,
+357,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,0,1,1946.0
+357,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,0,1,
+357,Hosni Briki –,lac3,Urgence Habib Thamer,19,0,1,3744.0
+357,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,0,1,2445.0
+358,HEND BEN NSSER,MOUROUJ 6,lac3,10,1,1,
+358,EYA ARFAOUI,Mourouj 4,lac3,10,1,1,
+358,Zied Aboud,Menzeh 7,lac3,10,1,1,1615.0
+358,MEHDI BEDHIAFI,Ouardia,lac3,10,1,1,2742.0
+359,Nader ouechtati,rue de paris centre ville,lac3,10,1,1,
+359,claude noah,menzeh 5 café jardin,lac3,10,1,1,
+359,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,1,1,
+359,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,1,1,
+360,JOHNSON MAXIME,Manar 1,lac3,10,1,1,
+360,Bounakcha Maha,Saida,lac3,10,1,1,
+360,Hosni Briki,Urgence Habib Thamer,lac3,10,1,1,
+360,ELSA DJIM,Manar 1,lac3,10,1,1,
+361,OMRANI HEJER,BOUMHAL,lac3,10,1,1,
+361,Ghouibi Hanen,Cite el kadhra,lac3,10,1,1,
+361,MALEK MARSAOUI,Beb Laassal,lac3,10,1,1,
+361,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,1,1,
+362,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,1,1,
+362,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,1,1,
+362,SIWAR JELJLI,BARDO,lac3,10,1,1,
+362,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,1,1,8375.0
+363,Gammoudi Oumaima,cité etadhamen,lac3,10,1,1,8818.0
+363,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,1,1,
+363,KHAWLA JERBI,ARIANA,lac3,10,1,1,
+363,SAHAR EL FAIRES,Cité saha,lac3,10,1,1,
+364,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,1,1,
+364,EYA RAHMOUNI,Djbal Jeloud,lac3,10,1,1,7212.0
+364,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,1,1,
+364,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,1,1,461.0
+365,Ayari Imen,Jaafer,lac3,10,1,1,7444.0
+365,Hmani Loubna,Hopital militaire Tunis,lac3,10,1,1,
+365,RENE RICHARD,ENNASR 1,lac3,10,1,1,
+366,MARWA WARTENI,lac3,Ben arous,19,1,1,
+366,HEND AJEJ,lac3,Bhar lazrek,19,1,1,
+366,CHAIMA GHARBI,lac3,BEB SOUIKA,19,1,1,
+366,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,1,1,
+367,KHAWLA JERBI,lac3,ARIANA,19,1,1,2030.0
+367,ALIA ABDELKARIM,lac3,ARIAN BORJ LOUZIR,19,1,1,
+367,AOUATEF CHAOUALI,lac3,borj louzir,19,1,1,
+367,OMRANI HEJER,lac3,BOUMHAL,19,1,1,5696.0
+368,DHIFALLA ROUAA,lac3,CENTRE VILLE PLACE BARCELONE,19,1,1,
+368,Ghouibi Hanen,lac3,Cite el kadhra,19,1,1,1941.0
+368,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,1,1,2742.0
+368,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,1,1,1203.0
+369,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,1,1,
+369,Gammoudi Oumaima,lac3,Cité etadhamen,19,1,1,
+369,EYA RAHMOUNI,lac3,Djbal Jeloud,19,1,1,
+369,SAHAR EL FAIRES,lac3,Cité saha,19,1,1,10568.0
+370,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,1,1,
+370,mayada sdghiani,ECR Alain Savary,sokra,19,1,1,
+370,RENE RICHARD,lac3,ENNASR 1,19,1,1,
+370,NOUMOU FRANCH,lac3,FRANCE VILLE GOMBATTAnt,19,1,1,
+371,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,1,1,10050.0
+371,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,1,1,2030.0
+371,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,1,1,
+371,rabeb zammeli,ECR Alain Savary,rades melyen,19,1,1,2708.0
+372,Hmani Loubna,lac3,Hopital militaire Tunis,19,1,1,
+372,Ayari Imen,lac3,Jaafer,19,1,1,1853.0
+372,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,1,1,
+372,sofien nefzi,ECR Alain Savary,nogra,19,1,1,1042.0
+373,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,1,1,
+373,ELSA DJIM,lac3,Manar 1,19,1,1,
+373,Beni henriette,lac3,l'aouina TAIEB MHIRI,19,1,1,7212.0
+373,JOHNSON MAXIME,lac3,Manar 1,19,1,1,
+374,claude noah,lac3,menzeh 5 café jardin,19,1,1,
+374,Zied Aboud,lac3,Menzeh 7,19,1,1,
+374,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,1,1,
+374,HALIMA BOUFENECH,ECR Alain Savary,lycee ezzahrouni,19,1,1,
+375,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,1,1,
+375,HEND BEN NASR,lac3,MOUROUJ 6,19,1,1,3744.0
+375,Wael Thabet,lac3,Mousqué Errawdha,19,1,1,
+375,EYA ARFAOUI,lac3,Mourouj 4,19,1,1,
+376,Djossou Rogel,lac3,Nour Jaafer,19,1,1,
+376,LAYLA,ECR Alain Savary,hay el zouhour 2,19,1,1,
+376,SEIF ALLAH JEBALI,ECR Alain Savary,jaafer,19,1,1,
+376,Mariem Rahali,lac3,Nacer 2,19,1,1,
+377,aymen abedelhak,ECR Alain Savary,HAY EL SAHA ARIANA,19,1,1,
+377,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,1,1,
+377,MEHDI BEDHIAFI,lac3,Ouardia,19,1,1,
+377,habiba hedhili,ECR Alain Savary,hay el mileha,19,1,1,2445.0
+378,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,1,1,461.0
+378,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,1,1,
+378,arwa el younsi,ECR Alain Savary,hay el khadhra,19,1,1,
+378,sirine maaroufi,ECR Alain Savary,el omran superieur,19,1,1,
+379,Nader ouechtati,lac3,Rue de paris centre-ville,19,1,1,
+379,El Arbi Saber,ECR Alain Savary,Denden,19,1,1,
+379,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,1,1,
+379,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,1,1,
+380,Bounakcha Maha,lac3,Saida,19,1,1,
+380,Hosni Briki,lac3,Urgence Habib Thamer,19,1,1,2968.0
+380,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,1,1,1799.0
+381,MALEK MARSAOUI,Beb Laassal,lac3,10,2,1,
+381,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,2,1,
+381,OMRANI HEJER,BOUMHAL,lac3,10,2,1,1665.0
+381,DHIFALLA ROUAA,CENTRE VILLE PLACE BARCELONE,lac3,10,2,1,
+382,Ghouibi Hanen,Cite el kadhra,lac3,10,2,1,
+382,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,2,1,
+382,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,2,1,
+382,SIWAR JELJLI,BARDO,lac3,10,2,1,
+383,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,2,1,7212.0
+383,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,2,1,
+383,KHAWLA JERBI,ARIANA,lac3,10,2,1,
+383,Gammoudi Oumaima,cité etadhamen,lac3,10,2,1,8818.0
+384,ALIA ABDELKARIM,ARIAN BORJ LOUZIR,lac3,10,2,1,
+384,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,2,1,
+384,SAHAR EL FAIRES,Cité saha,lac3,10,2,1,
+384,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,2,1,
+385,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,2,1,461.0
+385,EYA RAHMOUNI,Djbal Jeloud,lac3,10,2,1,
+386,EYA ARFAOUI,Mourouj 4,lac3,10,2,1,
+386,MEHDI BEDHIAFI,Ouardia,lac3,10,2,1,1641.0
+386,Zied Aboud,Menzeh 7,lac3,10,2,1,1203.0
+386,claude noah,menzeh 5 café jardin,lac3,10,2,1,
+387,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,2,1,
+387,Nader ouechtati,rue de paris centre ville,lac3,10,2,1,
+387,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,2,1,
+387,JOHNSON MAXIME,Manar 1,lac3,10,2,1,
+388,Bounakcha Maha,Saida,lac3,10,2,1,
+388,Hosni Briki,Urgence Habib Thamer,lac3,10,2,1,
+388,ELSA DJIM,Manar 1,lac3,10,2,1,
+389,Ayari Imen,Jaafer,lac3,10,2,1,7444.0
+389,Amel,Ezzahrouni,lac3,10,2,1,
+389,RENE RICHARD,ENNASR 1,lac3,10,2,1,
+389,Beni henriette,l'aouina TAIEB MHIRI,lac3,10,2,1,
+390,HEND AJEJ,lac3,Bhar lazrek,19,2,1,1654.0
+390,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,2,1,
+390,MARWA WARTENI,lac3,Ben arous,19,2,1,
+390,CHAIMA GHARBI,lac3,BEB SOUIKA,19,2,1,
+391,KHAWLA JERBI,lac3,ARIANA,19,2,1,6817.0
+391,AOUATEF CHAOUALI,lac3,borj louzir,19,2,1,
+391,ALIA ABDELKARIM,lac3,ARIAN BORJ LOUZIR,19,2,1,7212.0
+391,OMRANI HEJER,lac3,BOUMHAL,19,2,1,5696.0
+392,Ghouibi Hanen,lac3,Cite el kadhra,19,2,1,10050.0
+392,DHIFALLA ROUAA,lac3,CENTRE VILLE PLACE BARCELONE,19,2,1,
+392,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,2,1,2742.0
+392,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,2,1,1203.0
+393,SAHAR EL FAIRES,lac3,Cité saha,19,2,1,
+393,RENE RICHARD,lac3,ENNASR 1,19,2,1,
+393,Gammoudi Oumaima,lac3,Cité etadhamen,19,2,1,
+393,EYA RAHMOUNI,lac3,Djbal Jeloud,19,2,1,
+394,MARWEN NASER,lac3,FOUCHENA,19,2,1,3744.0
+394,NOUMOU FRANCH,lac3,FRANCE VILLE GOMBATTA,19,2,1,
+394,mayada sdghiani,ECR Alain Savary,sokra,19,2,1,
+394,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,2,1,
+395,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,2,1,1941.0
+395,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,2,1,1799.0
+395,rabeb zammeli,ECR Alain Savary,rades melyen,19,2,1,1398.0
+395,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,2,1,
+396,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,2,1,
+396,Hmani Loubna,lac3,Hopital militaire Tunis,19,2,1,
+396,sofien nefzi,ECR Alain Savary,nogra,19,2,1,
+396,Ayari Imen,lac3,Jaafer,19,2,1,10568.0
+397,aymen abedlkhalak,ECR Alain Savary,monflery,19,2,1,
+397,Beni henriette,lac3,l'aouina TAIEB MHIRI,19,2,1,
+397,JOHNSON MAXIME,lac3,Manar 1,19,2,1,
+397,ELSA DJIM,lac3,Manar 1,19,2,1,
+398,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,2,1,
+398,Zied Aboud,lac3,Menzeh 7,19,2,1,
+398,claude noah,lac3,menzeh 5 café jardin,19,2,1,
+398,HALIMA BOUFENECH,ECR Alain Savary,lycee ezzahrouni,19,2,1,461.0
+399,HEND BEN NASR,lac3,MOUROUJ 6,19,2,1,
+399,oumaima sallemi,ECR Alain Savary,ksar el siid,19,2,1,1042.0
+399,EYA ARFAOUI,lac3,Mourouj 4,19,2,1,
+399,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,2,1,
+400,Mariem Rahali,lac3,Nacer 2,19,2,1,
+400,Wael Thabet,lac3,Mousqué Errawdha,19,2,1,
+400,Djossou Rogel,lac3,Nour Jaafer,19,2,1,
+400,LAYLA,ECR Alain Savary,hay el zouhour 2,19,2,1,
+401,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,2,1,
+401,arwa el younsi,ECR Alain Savary,hay el khadhra,19,2,1,
+401,MEHDI BEDHIAFI,lac3,Ouardia,19,2,1,
+401,habiba hedhili,ECR Alain Savary,hay el mileha,19,2,1,
+402,Nader ouechtati,lac3,Rue de paris centre-ville,19,2,1,
+402,El Arbi Saber,ECR Alain Savary,Denden,19,2,1,
+402,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,2,1,
+402,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,2,1,
+403,Hosni Briki,lac3,Urgence Habib Thamer,19,2,1,2968.0
+403,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,2,1,2852.0
+403,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,2,1,
+403,Bounakcha Maha,lac3,Saida,19,2,1,
+404,SEIF ALLAH JEBALI,ECR Alain Savary,ARIANA,19,2,1,2445.0
+405,DHIFALLA ROUAA,lac3,CENTRE VILLE PLACE BARCELONE,19,3,1,
+405,OMRANI HEJER,lac3,BOUMHAL,19,3,1,5696.0
+405,MALEK MARSAOUI,lac3,Beb Laassal,19,3,1,
+405,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,3,1,
+406,Ghouibi Hanen,lac3,Cite el kadhra,19,3,1,1941.0
+406,KHAWLA JERBI,lac3,ARIANA,19,3,1,
+406,SIWAR JELJLI,lac3,BARDO,19,3,1,
+406,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,3,1,2852.0
+407,AZIZ BEN DHIFALLAH,lac3,AOUINA,19,3,1,
+407,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,3,1,
+407,ALIA ABDELKARIM,lac3,ARIAN BORJ LOUZIR,19,3,1,
+407,Gammoudi Oumaima,lac3,Cité etadhamen,19,3,1,
+408,SAHAR EL FAIRES,lac3,Cité saha,19,3,1,
+408,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,3,1,1203.0
+408,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,3,1,2742.0
+408,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,3,1,
+409,MARWEN NASER,lac3,FOUCHENA,19,3,1,3744.0
+409,Amel,lac3,Ezzahrouni,19,3,1,
+409,RENE RICHARD,lac3,ENNASR 1,19,3,1,
+409,EYA RAHMOUNI,lac3,Djbal Jeloud,19,3,1,
+410,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,3,1,10050.0
+410,NOUMOU FRANCH,lac3,FRANCE VILLE GOMBATTA,19,3,1,
+410,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,3,1,1799.0
+410,Hmani Loubna,lac3,Hopital militaire Tunis,19,3,1,
+411,rabeb zammeli,ECR Alain Savary,rades melyen,19,3,1,1398.0
+411,ismehen missewi,lac3,l'aouina TAIEB MHIRI,19,3,1,
+411,Ayari Imen,lac3,Jaafer,19,3,1,
+411,mayada sdghiani,ECR Alain Savary,sokra,19,3,1,
+412,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,3,1,
+412,Beni henriette,lac3,l'aouina TAIEB MHIRI,19,3,1,
+412,JOHNSON MAXIME,lac3,Manar 1,19,3,1,
+412,ELSA DJIM,lac3,Manar 1,19,3,1,
+413,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,3,1,
+413,sofien nefzi,ECR Alain Savary,nogra,19,3,1,
+413,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,3,1,
+413,claude noah,lac3,menzeh 5 café jardin,19,3,1,
+414,Zied Aboud,lac3,Menzeh 7,19,3,1,1654.0
+414,aymen abedlkhalak,ECR Alain Savary,monflery,19,3,1,
+414,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,3,1,
+414,EYA ARFAOUI,lac3,Mourouj 4,19,3,1,
+415,Mariem Rahali,lac3,Nacer 2,19,3,1,
+415,HALIMA BOUFENECH,ECR Alain Savary,lycee ezzahrouni,19,3,1,
+415,Wael Thabet,lac3,Mousqué Errawdha,19,3,1,7212.0
+415,HEND BEN NASR,lac3,MOUROUJ 6,19,3,1,
+416,MEHDI BEDHIAFI,lac3,Ouardia,19,3,1,2968.0
+416,Djossou Rogel,lac3,Nour Jaafer,19,3,1,
+416,oumaima sallemi,ECR Alain Savary,ksar el siid,19,3,1,
+416,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,3,1,
+417,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,3,1,
+417,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,3,1,10568.0
+417,Nader ouechtati,lac3,Rue de paris centre-ville,19,3,1,
+417,LAYLA,ECR Alain Savary,hay el zouhour 2,19,3,1,461.0
+418,Bounakcha Maha,lac3,Saida,19,3,1,
+418,habiba hedhili,ECR Alain Savary,hay el mileha,19,3,1,
+418,sirine maaroufi,ECR Alain Savary,el omran superieur,19,3,1,2785.0
+418,Hosni Briki,lac3,Urgence Habib Thamer,19,3,1,
+419,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,3,1,
+419,El Arbi Saber,ECR Alain Savary,Denden,19,3,1,
+419,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,3,1,
+419,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,3,1,
+420,SEIF ALLAH JEBALI,ECR Alain Savary,ariana jaafer,19,3,1,2445.0
+420,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,3,1,1042.0
+420,CHAIMA GHARBI,,BEB SOUIKA,19,3,1,
+421,claude noah,menzeh 5 café jardin,lac3,10,3,1,
+421,MEHDI BEDHIAFI,Ouardia,lac3,10,3,1,1641.0
+421,EYA ARFAOUI,Mourouj 4,lac3,10,3,1,
+421,Zied Aboud,Menzeh 7,lac3,10,3,1,2742.0
+422,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,3,1,1665.0
+422,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,3,1,
+422,JOHNSON MAXIME,Manar 1,lac3,10,3,1,
+422,Nader ouechtati,rue de paris centre ville,lac3,10,3,1,
+423,Bounakcha Maha,Saida,lac3,10,3,1,
+423,Hosni Briki,Urgence Habib Thamer,lac3,10,3,1,
+423,ELSA DJIM,Manar 1,lac3,10,3,1,
+424,DHIFALLA ROUAA,CENTRE VILLE PLACE BARCELONE,lac3,10,3,1,
+424,OMRANI HEJER,BOUMHAL,lac3,10,3,1,
+424,MALEK MARSAOUI,Beb Laassal,lac3,10,3,1,
+424,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,3,1,
+425,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,3,1,
+425,SIWAR JELJLI,BARDO,lac3,10,3,1,
+425,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,3,1,
+425,Ghouibi Hanen,Cite el kadhra,lac3,10,3,1,
+426,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,3,1,8375.0
+426,KHAWLA JERBI,ARIANA,lac3,10,3,1,
+426,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,3,1,
+426,Gammoudi Oumaima,cité etadhamen,lac3,10,3,1,1203.0
+427,ALIA ABDELKARIM,ARIAN BORJ LOUZIR,lac3,10,3,1,
+427,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,3,1,
+427,SAHAR EL FAIRES,Cité saha,lac3,10,3,1,
+427,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,3,1,7212.0
+428,EYA RAHMOUNI,Djbal Jeloud,lac3,10,3,1,
+428,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,3,1,461.0
+429,Amel,Ezzahrouni,lac3,10,3,1,
+429,Ayari Imen,Jaafer,lac3,10,3,1,7444.0
+429,Beni henriette,l'aouina TAIEB MHIRI,lac3,10,3,1,
+429,RENE RICHARD,ENNASR 1,lac3,10,3,1,
+430,ismehen missewi,l'aouina TAIEB MHIRI,lac3,10,3,1,
+431,DHIFALLA ROUAA,CENTRE VILLE PLACE BARCELONE,lac3,10,4,1,
+431,OMRANI HEJER,BOUMHAL,lac3,10,4,1,1665.0
+431,KIMINI KHEY SAVIENDRA,Beb Laassal,lac3,10,4,1,
+431,MALEK MARSAOUI,Beb Laassal,lac3,10,4,1,
+432,BOULOU WILFRIED,BEB EL KADHRA,lac3,10,4,1,
+432,Ghouibi Hanen,Cite el kadhra,lac3,10,4,1,
+432,SIWAR JELJLI,BARDO,lac3,10,4,1,
+432,NUMBI NAAY FEARISS,cité el mile7a,lac3,10,4,1,8375.0
+433,AYARI HAJER,ARIANA RN8 HALIMA SEHLIA,lac3,10,4,1,
+433,RANIA OUESLATI,Cité Fawz nasr3,lac3,10,4,1,
+433,Gammoudi Oumaima,cité etadhamen,lac3,10,4,1,8818.0
+433,KHAWLA JERBI,ARIANA,lac3,10,4,1,
+434,AZIZ BEN DHIFALLAH,AOUINA,lac3,10,4,1,1042.0
+434,SAHAR EL FAIRES,Cité saha,lac3,10,4,1,
+434,ALIA ABDELKARIM,ARIAN BORJ LOUZIR,lac3,10,4,1,
+434,SAMIRATOU COPORE,Cité wahat l'aouina,lac3,10,4,1,
+435,EYA RAHMOUNI,Djbal Jeloud,lac3,10,4,1,
+435,SABRINE SASSI,20 MARS SIDI HASSINE,lac3,10,4,1,461.0
+436,Zied Aboud,Menzeh 7,lac3,10,4,1,1203.0
+436,MEHDI BEDHIAFI,Ouardia,lac3,10,4,1,1641.0
+436,EYA ARFAOUI,Mourouj 4,lac3,10,4,1,
+436,claude noah,menzeh 5 café jardin,lac3,10,4,1,
+437,SOUHEIL GRIRA,RESIDENCE INES NOUR JAAFER,lac3,10,4,1,7444.0
+437,Nader ouechtati,rue de paris centre ville,lac3,10,4,1,
+437,YOSRA HAMMEMI,MEDINA JADIDA,lac3,10,4,1,
+437,JOHNSON MAXIME,Manar 1,lac3,10,4,1,
+438,ELSA DJIM,Manar 1,lac3,10,4,1,
+438,Mariem rahali,Nacer 2,lac3,10,5,1,1853.0
+438,Bounakcha Maha,Saida,lac3,10,4,1,
+438,Hosni Briki,Urgence Habib Thamer,lac3,10,4,1,
+439,Ayari Imen,Jaafer,lac3,10,4,1,
+439,RENE RICHARD,ENNASR 1,lac3,10,4,1,
+439,Beni henriette,l'aouina TAIEB MHIRI,lac3,10,4,1,
+439,Amel,Ezzahrouni,lac3,10,4,1,
+440,RIMA HMANI,Hôpital militaire,lac3,10,5,1,1665.0
+441,SIWAR JELJLI,lac3,BARDO,19,4,1,
+441,AOUATEF CHAOUALI,lac3,borj louzir,19,4,1,
+441,BOLOU WILFRIE,lac3,BEB EL KADHRA,19,4,1,
+441,HEND AJEJ,lac3,Bhar lazrek,19,4,1,
+442,KHAWLA JERBI,lac3,ARIANA,19,4,1,
+442,AYARI HAJER,lac3,ARIANA RN8 HALIMA SEHLIA,19,4,1,
+442,OMRANI HEJER,lac3,BOUMHAL,19,4,1,5696.0
+442,DHIFALLA ROUAA,lac3,CENTRE VILLE PLACE BARCELONE,19,4,1,
+443,SABRINE SASSI,lac3,20 MARS SIDI HASSINE,19,4,1,2742.0
+443,Ghouibi Hanen,lac3,Cite el kadhra,19,4,1,
+443,NUMBI NAAY FEARISS,lac3,Cité el mile7a,19,4,1,10568.0
+443,ALIA ABDELKARIM,lac3,ARIAN BORJ LOUZIR,19,4,1,
+444,RANIA OUESLATI,lac3,Cité Fawz nasr3,19,4,1,
+444,SAHAR EL FAIRES,lac3,Cité saha,19,4,1,
+444,SAMIRATOU COPORE,lac3,Cité wahat l'aouina,19,4,1,
+444,Gammoudi Oumaima,lac3,Cité etadhamen,19,4,1,
+445,EYA RAHMOUNI,lac3,Djbal Jeloud,19,4,1,
+445,RENE RICHARD,lac3,ENNASR 1,19,4,1,1203.0
+445,Amel,lac3,Ezzahrouni,19,4,1,
+445,MARWEN NASER,lac3,FOUCHENA,19,4,1,3744.0
+446,SOUHIR KERRIT,lac3,Hafsia Rue Tronja,19,4,1,10050.0
+446,smiri mehrzeya,ECR Alain Savary,sokra el filege,19,4,1,1799.0
+446,mayada sdghiani,ECR Alain Savary,sokra,19,4,1,
+446,NOUMOU FRANCH,lac3,FRANCE VILLE GOMBATTA,19,4,1,1941.0
+447,SAIDA BOUDHIB,ECR Alain Savary,Parc Soukra,19,4,1,
+447,rabeb zammeli,ECR Alain Savary,rades melyen,19,4,1,2708.0
+447,PAVELL MENZEZ,ECR Alain Savary,NOUR JAAFER,19,4,1,
+447,Hmani Loubna,lac3,Hopital militaire Tunis,19,4,1,
+448,NESRINE GEDECHI,ECR Alain Savary,MOUROUJ,19,4,1,
+448,Beni henriette,lac3,l'aouina TAIEB MHIRI,19,4,1,1615.0
+448,sofien nefzi,ECR Alain Savary,nogra,19,4,1,
+448,Ayari Imen,lac3,Jaafer,19,4,1,
+449,JOHNSON MAXIME,lac3,Manar 1,19,4,1,
+449,aymen abedlkhalak,ECR Alain Savary,monflery,19,4,1,
+449,YOSRA HAMMEMI,lac3,MEDINA JADIDA,19,4,1,
+449,ELSA DJIM,lac3,Manar 1,19,4,1,
+450,claude noah,lac3,menzeh 5 café jardin,19,4,1,
+450,Zied Aboud,lac3,Menzeh 7,19,4,1,1042.0
+450,MERIEM BEN MOUHAMED,ECR Alain Savary,MEDINA JDIDA,19,4,1,
+450,HALIMA BOUFENECH,ECR Alain Savary,manzah 1,19,4,1,1654.0
+451,EYA ARFAOUI,lac3,Mourouj 4,19,4,1,
+451,HEND BEN NASR,lac3,MOUROUJ 6,19,4,1,
+451,SEIF ALLAH JEBALI,ECR Alain Savary,manar 2,19,4,1,461.0
+451,Wael Thabet,lac3,Mousqué Errawdha,19,4,1,1853.0
+452,oumaima sallemi,ECR Alain Savary,ksar el siid,19,4,1,
+452,Mariem Rahali,lac3,Nacer 2,19,4,1,
+452,MEHDI BEDHIAFI,lac3,Ouardia,19,4,1,1665.0
+452,abda rihab,ECR Alain Savary,l aouina hay l wahat el zayatin,19,4,1,
+453,Nader ouechtati,lac3,Rue de paris centre-ville,19,4,1,
+453,olfa homrani,ECR Alain Savary,hay el nozha ariana,19,4,1,
+453,LAYLA,ECR Alain Savary,hay el zouhour 2,19,4,1,
+453,SOUHEIL GRIRA,lac3,RESIDENCE INES NOUR JAAFER,19,4,1,7212.0
+454,sirine maaroufi,ECR Alain Savary,el omran superieur,19,4,1,
+454,Bounakcha Maha,lac3,Saida,19,4,1,
+454,El Arbi Saber,ECR Alain Savary,Denden,19,4,1,
+454,jabnoun boudour,ECR Alain Savary,diar ben mahmoud,19,4,1,
+455,Allan Ritchie,ECR Alain Savary,cité El Ghazela ( essahafa),19,4,1,
+455,SANA,ECR Alain Savary,CITÉ OLYMPIQUE,19,4,1,2445.0
+455,wherghi khaoula,ECR Alain Savary,cite millitaire l aouina,19,4,1,2480.0
+455,Hosni Briki,lac3,Urgence Habib Thamer,19,4,1,
