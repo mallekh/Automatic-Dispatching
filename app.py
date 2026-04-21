@@ -219,10 +219,8 @@ class ConverterApp:
         t = LANGUAGES[self.current_lang]
         save_path = filedialog.asksaveasfilename(defaultextension=".xlsx", initialfile=f"{Path(self.selected_file).stem}_export.xlsx")
         if not save_path: return
-        label = "Ramassage" if self.trip_type_var.get() in [t["opt_ram"], "Ramassage"] else "Retour"
-        self.converter.trip_label = label
         try:
-            self.converter.convert(self.selected_file, save_path)
+            self.converter.convert_dispatch_ml(self.selected_file, save_path)
             messagebox.showinfo("Succès", t["complete"])
             self._reset_ui_after_work()
         except Exception as e:
