@@ -1,0 +1,7 @@
+# PyInstaller outputs
+dist/
+build/
+*.spec.bak
+
+# Safety: never push generated executables
+*.exe

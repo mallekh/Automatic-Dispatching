@@ -1,12 +1,39 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+from PyInstaller.utils.hooks import collect_data_files, collect_submodules
+import importlib.util
+
+
+hiddenimports = [
+    # Core runtime used by converter + UI.
+    'pandas',
+    'numpy',
+    'openpyxl',
+    'pdfplumber',
+    'customtkinter',
+    # Keep ML/runtime dependencies bundled for future logic growth.
+    'scipy',
+    'sklearn',
+]
+if importlib.util.find_spec('tkinterdnd2') is not None:
+    hiddenimports.append('tkinterdnd2')
+hiddenimports += collect_submodules('sklearn')
+hiddenimports += collect_submodules('scipy')
+
+datas = []
+datas += collect_data_files('pandas')
+datas += collect_data_files('openpyxl')
+datas += collect_data_files('customtkinter')
+if importlib.util.find_spec('tkinterdnd2') is not None:
+    datas += collect_data_files('tkinterdnd2')
+
 
 a = Analysis(
     ['app.py'],
-    pathex=[],
+    pathex=['.'],
     binaries=[],
-    datas=[],
-    hiddenimports=['pandas', 'openpyxl', 'pdfplumber', 'tkinterdnd2'],
+    datas=datas,
+    hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

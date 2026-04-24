@@ -24,6 +24,7 @@ LANGUAGES = {
         "step2": "2. SÉLECTION DU DOCUMENT",
         "step3": "3. APERÇU DES DONNÉES",
         "drop_hint": "Déposez votre fichier ici ou cliquez pour parcourir",
+        "btn_upload": "Téléverser le fichier",
         "btn_convert": "GÉNÉRER LE FICHIER EXCEL",
         "opt_select": "-- Choisir le type --",
         "opt_ram": "Ramassage",
@@ -36,6 +37,7 @@ LANGUAGES = {
         "step2": "٢. اختيار الملف",
         "step3": "٣. معاينة البيانات",
         "drop_hint": "اسحب الملف هنا أو انقر للاختيار",
+        "btn_upload": "رفع الملف",
         "btn_convert": "تصدير إلى إكسل",
         "opt_select": "-- اختر النوع --",
         "opt_ram": "تجميع (Ramassage)",
@@ -86,8 +88,19 @@ class ConverterApp:
 
         # --- CONTENEUR PRINCIPAL ---
         # Utilisation d'un Frame normal pour le plein écran avec scroll interne si nécessaire
+        self.footer = ctk.CTkFrame(self.app, height=96, fg_color="#F0F2F5")
+        self.footer.pack(side="bottom", fill="x", padx=60, pady=(0, 12))
+        self.footer.pack_propagate(False)
+
+        self.btn_convert = ctk.CTkButton(
+            self.footer, text="", height=70, fg_color="#0052CC", hover_color="#0747A6",
+            font=("Helvetica", 20, "bold"), command=self._handle_conversion,
+            state="disabled", corner_radius=10
+        )
+        self.btn_convert.pack(fill="x", padx=10, pady=10)
+
         self.main_container = ctk.CTkFrame(self.app, fg_color="transparent")
-        self.main_container.pack(fill="both", expand=True, padx=60, pady=20)
+        self.main_container.pack(fill="both", expand=True, padx=60, pady=(20, 6))
         
         # Grid configuration pour centrer le contenu
         self.main_container.grid_columnconfigure(0, weight=1)
@@ -110,29 +123,35 @@ class ConverterApp:
         self.lbl_step2 = ctk.CTkLabel(self.main_container, text="", font=("Helvetica", 14, "bold"), text_color="#5E6C84")
         self.lbl_step2.grid(row=2, column=0, sticky="w", pady=(0, 5), padx=10)
         
-        self.drop_card = ctk.CTkFrame(self.main_container, height=110, fg_color="white", corner_radius=12, border_width=2, border_color="#DFE1E6")
+        self.drop_card = ctk.CTkFrame(self.main_container, height=130, fg_color="white", corner_radius=12, border_width=2, border_color="#DFE1E6")
         self.drop_card.grid(row=3, column=0, sticky="ew", pady=(0, 20), padx=10)
         self.drop_card.pack_propagate(False)
         self.drop_card.bind("<Button-1>", lambda e: self._browse_file())
         
         self.lbl_drop_hint = ctk.CTkLabel(self.drop_card, text="", font=("Helvetica", 16), text_color="#6B778C")
-        self.lbl_drop_hint.pack(expand=True)
+        self.lbl_drop_hint.pack(pady=(16, 8))
+
+        self.btn_upload = ctk.CTkButton(
+            self.drop_card, text="", width=220, height=38, command=self._browse_file,
+            fg_color="#0052CC", hover_color="#0747A6", font=("Helvetica", 14, "bold")
+        )
+        self.btn_upload.pack(pady=(0, 14))
 
         # SECTION 3
         self.lbl_step3 = ctk.CTkLabel(self.main_container, text="", font=("Helvetica", 14, "bold"), text_color="#5E6C84")
         self.lbl_step3.grid(row=4, column=0, sticky="w", pady=(0, 5), padx=10)
         
-        preview_bg = ctk.CTkFrame(self.main_container, height=440, fg_color="white", corner_radius=12)
+        preview_bg = ctk.CTkFrame(self.main_container, height=310, fg_color="white", corner_radius=12)
         preview_bg.grid(row=5, column=0, sticky="nsew", pady=(0, 20), padx=10)
         preview_bg.grid_propagate(False)
-        self.main_container.grid_rowconfigure(5, weight=3) # Le tableau prend plus d'espace
+        self.main_container.grid_rowconfigure(5, weight=0) # Keep preview to fixed 5-row height
 
         style = ttk.Style()
         style.theme_use("clam")
         style.configure("Treeview", background="#FFFFFF", foreground="#172B4D", fieldbackground="#FFFFFF", borderwidth=0, rowheight=40)
         style.configure("Treeview.Heading", background="#F4F5F7", foreground="#0052CC", font=("Helvetica", 12, "bold"))
 
-        self.tree = ttk.Treeview(preview_bg, show="headings")
+        self.tree = ttk.Treeview(preview_bg, show="headings", height=5)
         self.tree.pack(side="left", fill="both", expand=True, padx=(20, 0), pady=(20, 10))
         
         scrolly = ctk.CTkScrollbar(preview_bg, orientation="vertical", command=self.tree.yview)
@@ -142,14 +161,6 @@ class ConverterApp:
         self.tree.configure(yscrollcommand=scrolly.set)
         self.tree.configure(xscrollcommand=scrollx.set)
 
-        # BOUTON FINAL
-        self.btn_convert = ctk.CTkButton(
-            self.main_container, text="", height=70, fg_color="#0052CC", hover_color="#0747A6",
-            font=("Helvetica", 20, "bold"), command=self._handle_conversion, 
-            state="disabled", corner_radius=10
-        )
-        self.btn_convert.grid(row=6, column=0, sticky="ew", pady=(10, 30), padx=10)
-
         self._update_ui_text()
 
     def _update_ui_text(self):
@@ -158,6 +169,7 @@ class ConverterApp:
         self.lbl_step2.configure(text=t["step2"])
         self.lbl_step3.configure(text=t["step3"])
         self.lbl_drop_hint.configure(text=t["drop_hint"])
+        self.btn_upload.configure(text=t["btn_upload"])
         self.btn_convert.configure(text=t["btn_convert"])
         choices = [t["opt_select"], t["opt_ram"], t["opt_ret"]]
         self.option_menu.configure(values=choices)
@@ -192,7 +204,7 @@ class ConverterApp:
             for col in df.columns:
                 self.tree.heading(col, text=col.upper())
                 self.tree.column(col, width=200, anchor="center")
-            for _, row in df.head(15).iterrows():
+            for row in df.itertuples(index=False, name=None):
                 clean_row = [str(v) if pd.notna(v) else "" for v in row]
                 self.tree.insert("", "end", values=clean_row)
             self.lbl_drop_hint.configure(text=f"✅ {Path(path).name}", text_color="#0052CC")
@@ -246,3 +258,5 @@ class ConverterApp:
 if __name__ == "__main__":
     app = ConverterApp()
     app.run()
+
+
