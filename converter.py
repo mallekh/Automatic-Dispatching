@@ -10,6 +10,7 @@ import io
 import logging
 import unicodedata
 from abc import ABC, abstractmethod
+from copy import copy
 from pathlib import Path
 from typing import Dict, Type, Tuple, List, Optional
 
@@ -212,12 +213,11 @@ class FileConverter:
         cleaned_df = self._remove_repeated_headers(raw_df)
         ml_df = self._prepare_ml_dataframe(cleaned_df)
         clusters = self._build_geographic_clusters(ml_df)
-        dispatch_df, summary_df = self._build_dispatch_outputs(ml_df, clusters)
 
         if not output_path.lower().endswith(".xlsx"):
             output_path += ".xlsx"
 
-        self._export_dispatch_workbook(dispatch_df, summary_df, output_path)
+        self._export_dispatch_workbook(path, cleaned_df, clusters, output_path)
         return f"Success: Dispatch workbook saved to {output_path}"
 
     def _normalize_dataframe(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -439,79 +439,186 @@ class FileConverter:
         wb.save(output_path)
 
     def _export_dispatch_workbook(
-        self, dispatch_df: pd.DataFrame, summary_df: pd.DataFrame, output_path: str
+        self,
+        input_path: Path,
+        cleaned_df: pd.DataFrame,
+        clusters: np.ndarray,
+        output_path: str,
     ):
-        with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
-            dispatch_df.to_excel(
-                writer, index=False, sheet_name="final_course_dispatch_geographic"
-            )
-            summary_df.to_excel(
-                writer,
-                index=True,
-                index_label="Course_ID",
-                sheet_name="course_summary_geographic",
-            )
-
-        wb = openpyxl.load_workbook(output_path)
-        for sheet_name, table_name in [
-            ("final_course_dispatch_geographic", "DispatchGeo"),
-            ("course_summary_geographic", "SummaryGeo"),
-        ]:
-            ws = wb[sheet_name]
-            self._apply_base_sheet_style(ws, table_name)
-            self._apply_course_block_emphasis(ws)
-
-        wb.save(output_path)
-
-    def _apply_base_sheet_style(self, ws, table_name: str):
-        tab = Table(displayName=table_name, ref=ws.dimensions)
-        tab.tableStyleInfo = TableStyleInfo(
-            name="TableStyleMedium9",
-            showFirstColumn=False,
-            showLastColumn=False,
-            showRowStripes=True,
-            showColumnStripes=False,
-        )
-        ws.add_table(tab)
-
-        for col in ws.columns:
-            max_length = 0
-            column_letter = col[0].column_letter
-            for i, cell in enumerate(col):
-                if i > 150:
-                    break
-                if cell.value:
-                    max_length = max(max_length, len(str(cell.value)))
-                cell.alignment = Alignment(vertical="center", horizontal="left", indent=1)
-            ws.column_dimensions[column_letter].width = min(max_length + 4, 60)
-
-        ws.freeze_panes = "A2"
-        ws.row_dimensions[1].height = 25
-
-    def _apply_course_block_emphasis(self, ws):
-        header = [cell.value for cell in ws[1]]
-        if "Course_ID" not in header:
+        if input_path.suffix.lower() in {".xlsx", ".xlsm"}:
+            wb = openpyxl.load_workbook(input_path)
+            ws = wb.active
+            for sheet_name in list(wb.sheetnames):
+                if sheet_name != ws.title:
+                    wb.remove(wb[sheet_name])
+            ml_df = self._prepare_ml_dataframe(cleaned_df)
+            self._render_template_layout(ws, cleaned_df, ml_df, clusters)
+            wb.save(output_path)
             return
 
-        course_col_idx = header.index("Course_ID") + 1
-        fill_a = PatternFill(fill_type="solid", fgColor="F7FBFF")
-        fill_b = PatternFill(fill_type="solid", fgColor="EEF6FF")
-        border_top = Border(top=Side(style="thin", color="D6E4FF"))
+        # Fallback for CSV/XLS sources where template styles are unavailable.
+        wb = openpyxl.Workbook()
+        ws = wb.active
+        ws.title = "Agents par Taxi"
+        ml_df = self._prepare_ml_dataframe(cleaned_df)
+        self._render_template_layout(ws, cleaned_df, ml_df, clusters, use_sheet_as_template=False)
+        wb.save(output_path)
 
-        current_course = None
-        use_alt = False
+    def _render_template_layout(
+        self,
+        ws,
+        cleaned_df: pd.DataFrame,
+        ml_df: pd.DataFrame,
+        clusters: np.ndarray,
+        use_sheet_as_template: bool = True,
+    ):
+        if use_sheet_as_template:
+            header_values, header_styles, header_height, data_styles, data_height = self._extract_template_metadata(ws)
+            self._reset_sheet_to_header(ws)
+        else:
+            header_values = list(cleaned_df.columns)
+            header_styles = {}
+            header_height = ws.row_dimensions[1].height
+            data_styles = {}
+            data_height = None
+            for col_idx, value in enumerate(header_values, start=1):
+                ws.cell(row=1, column=col_idx, value=value)
 
-        for row_idx in range(2, ws.max_row + 1):
-            course_value = ws.cell(row=row_idx, column=course_col_idx).value
-            if course_value != current_course:
-                current_course = course_value
-                use_alt = not use_alt
-                for c in range(1, ws.max_column + 1):
-                    ws.cell(row=row_idx, column=c).border = border_top
+        taxi_col_idx = self._find_taxi_column(header_values)
+        white_fill, orange_fill = self._detect_course_fills(ws, taxi_col_idx)
+        blocks = self._build_course_blocks(cleaned_df, ml_df, clusters)
+        source_columns = set(cleaned_df.columns)
+        output_row = 2
+        prev_time_key = None
+        color_toggle = False
 
-            fill = fill_a if use_alt else fill_b
-            for c in range(1, ws.max_column + 1):
-                ws.cell(row=row_idx, column=c).fill = fill
+        for block_idx, (course_id, course_hour, course_time_key, row_indices) in enumerate(blocks):
+            if prev_time_key is not None and course_time_key != prev_time_key:
+                for col_idx, header in enumerate(header_values, start=1):
+                    header_cell = ws.cell(row=output_row, column=col_idx, value=header)
+                    if col_idx in header_styles:
+                        header_cell._style = copy(header_styles[col_idx])
+                if header_height is not None:
+                    ws.row_dimensions[output_row].height = header_height
+                output_row += 1
+                color_toggle = False
+
+            block_fill = orange_fill if color_toggle else white_fill
+            block_start = output_row
+            for source_row in row_indices:
+                for col_idx, header in enumerate(header_values, start=1):
+                    value = cleaned_df.at[source_row, header] if header in source_columns else None
+                    if taxi_col_idx and col_idx == taxi_col_idx:
+                        value = None
+                    cell = ws.cell(row=output_row, column=col_idx, value=value)
+                    if col_idx in data_styles:
+                        cell._style = copy(data_styles[col_idx])
+                    if taxi_col_idx is None or col_idx != taxi_col_idx:
+                        cell.fill = copy(block_fill)
+                if data_height is not None:
+                    ws.row_dimensions[output_row].height = data_height
+                output_row += 1
+
+            if taxi_col_idx and row_indices:
+                block_end = output_row - 1
+                taxi_cell = ws.cell(row=block_start, column=taxi_col_idx, value=f"Taxi_{course_id + 1}")
+                if taxi_col_idx in data_styles:
+                    taxi_cell._style = copy(data_styles[taxi_col_idx])
+                if block_end > block_start:
+                    ws.merge_cells(
+                        start_row=block_start,
+                        start_column=taxi_col_idx,
+                        end_row=block_end,
+                        end_column=taxi_col_idx,
+                    )
+            prev_time_key = course_time_key
+            color_toggle = not color_toggle
+
+    def _extract_template_metadata(self, ws):
+        max_col = ws.max_column
+        header_values = [ws.cell(row=1, column=col_idx).value for col_idx in range(1, max_col + 1)]
+        header_styles = {
+            col_idx: copy(ws.cell(row=1, column=col_idx)._style)
+            for col_idx in range(1, max_col + 1)
+        }
+        data_styles = {
+            col_idx: copy(ws.cell(row=2, column=col_idx)._style)
+            for col_idx in range(1, max_col + 1)
+        } if ws.max_row >= 2 else {}
+        header_height = ws.row_dimensions[1].height
+        data_height = ws.row_dimensions[2].height if ws.max_row >= 2 else None
+        return header_values, header_styles, header_height, data_styles, data_height
+
+    def _reset_sheet_to_header(self, ws):
+        for merged_range in list(ws.merged_cells.ranges):
+            ws.unmerge_cells(str(merged_range))
+        if ws.max_row > 1:
+            ws.delete_rows(2, ws.max_row - 1)
+
+    def _build_course_blocks(
+        self,
+        cleaned_df: pd.DataFrame,
+        ml_df: pd.DataFrame,
+        clusters: np.ndarray,
+    ) -> List[Tuple[int, int, str, List[int]]]:
+        cols = self._resolve_required_columns(cleaned_df)
+        heure_col = cols["Heure"]
+        blocks: List[Tuple[int, int, str, List[int]]] = []
+        for course_id in sorted(np.unique(clusters).tolist()):
+            row_indices = np.where(clusters == course_id)[0].tolist()
+            if row_indices:
+                first_idx = row_indices[0]
+                course_hour = int(ml_df.iloc[first_idx]["hour"])
+                raw_heure = cleaned_df.iloc[first_idx][heure_col] if heure_col in cleaned_df.columns else ""
+                if pd.isna(raw_heure):
+                    raw_heure = ""
+                course_time_key = str(raw_heure).strip()
+                blocks.append((int(course_id), course_hour, course_time_key, row_indices))
+        # Group chronologically by parsed hour, then by raw Heure display value, then course id.
+        blocks.sort(key=lambda item: (item[1], item[2], item[0]))
+        return blocks
+
+    def _find_taxi_column(self, headers: List[object]) -> Optional[int]:
+        for idx, value in enumerate(headers, start=1):
+            if self._normalize_colname(value) == "taxi":
+                return idx
+        return None
+
+    def _detect_course_fills(self, ws, taxi_col_idx: Optional[int]):
+        white_fill = PatternFill(fill_type="solid", fgColor="FFFFFF")
+        orange_fill = PatternFill(fill_type="solid", fgColor="F4B183")
+
+        # Orange must match the header text color.
+        for col_idx in range(1, ws.max_column + 1):
+            header_cell = ws.cell(row=1, column=col_idx)
+            header_color = getattr(getattr(header_cell, "font", None), "color", None)
+            if header_color is None:
+                continue
+            orange_fill = PatternFill(fill_type="solid")
+            orange_fill.fgColor = copy(header_color)
+            break
+
+        for col_idx in range(1, ws.max_column + 1):
+            if taxi_col_idx and col_idx == taxi_col_idx:
+                continue
+            base_fill = copy(ws.cell(row=2, column=col_idx).fill)
+            if getattr(base_fill, "fill_type", None):
+                white_fill = base_fill
+                break
+
+        for row_idx in range(2, min(ws.max_row, 300) + 1):
+            for col_idx in range(1, ws.max_column + 1):
+                if taxi_col_idx and col_idx == taxi_col_idx:
+                    continue
+                fill = ws.cell(row=row_idx, column=col_idx).fill
+                if not fill or not fill.fill_type:
+                    continue
+                rgb = getattr(fill.fgColor, "rgb", None)
+                if rgb and rgb.upper() not in {"FFFFFFFF", "00FFFFFF"}:
+                    orange_fill = copy(fill)
+                    return white_fill, orange_fill
+
+        return white_fill, orange_fill
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  Example Execution

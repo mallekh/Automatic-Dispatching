@@ -110,7 +110,7 @@ class ConverterApp:
         self.lbl_step2 = ctk.CTkLabel(self.main_container, text="", font=("Helvetica", 14, "bold"), text_color="#5E6C84")
         self.lbl_step2.grid(row=2, column=0, sticky="w", pady=(0, 5), padx=10)
         
-        self.drop_card = ctk.CTkFrame(self.main_container, height=150, fg_color="white", corner_radius=12, border_width=2, border_color="#DFE1E6")
+        self.drop_card = ctk.CTkFrame(self.main_container, height=110, fg_color="white", corner_radius=12, border_width=2, border_color="#DFE1E6")
         self.drop_card.grid(row=3, column=0, sticky="ew", pady=(0, 20), padx=10)
         self.drop_card.pack_propagate(False)
         self.drop_card.bind("<Button-1>", lambda e: self._browse_file())
@@ -122,9 +122,10 @@ class ConverterApp:
         self.lbl_step3 = ctk.CTkLabel(self.main_container, text="", font=("Helvetica", 14, "bold"), text_color="#5E6C84")
         self.lbl_step3.grid(row=4, column=0, sticky="w", pady=(0, 5), padx=10)
         
-        preview_bg = ctk.CTkFrame(self.main_container, fg_color="white", corner_radius=12)
+        preview_bg = ctk.CTkFrame(self.main_container, height=440, fg_color="white", corner_radius=12)
         preview_bg.grid(row=5, column=0, sticky="nsew", pady=(0, 20), padx=10)
-        self.main_container.grid_rowconfigure(5, weight=1) # Le tableau prend l'espace restant
+        preview_bg.grid_propagate(False)
+        self.main_container.grid_rowconfigure(5, weight=3) # Le tableau prend plus d'espace
 
         style = ttk.Style()
         style.theme_use("clam")
@@ -132,11 +133,14 @@ class ConverterApp:
         style.configure("Treeview.Heading", background="#F4F5F7", foreground="#0052CC", font=("Helvetica", 12, "bold"))
 
         self.tree = ttk.Treeview(preview_bg, show="headings")
-        self.tree.pack(side="left", fill="both", expand=True, padx=20, pady=20)
+        self.tree.pack(side="left", fill="both", expand=True, padx=(20, 0), pady=(20, 10))
         
         scrolly = ctk.CTkScrollbar(preview_bg, orientation="vertical", command=self.tree.yview)
-        scrolly.pack(side="right", fill="y", padx=(0, 10), pady=20)
+        scrolly.pack(side="right", fill="y", padx=(10, 10), pady=(20, 10))
+        scrollx = ctk.CTkScrollbar(preview_bg, orientation="horizontal", command=self.tree.xview)
+        scrollx.pack(side="bottom", fill="x", padx=20, pady=(0, 14))
         self.tree.configure(yscrollcommand=scrolly.set)
+        self.tree.configure(xscrollcommand=scrollx.set)
 
         # BOUTON FINAL
         self.btn_convert = ctk.CTkButton(
