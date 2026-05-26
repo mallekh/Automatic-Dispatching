@@ -7,8 +7,10 @@ Date: 2026-04-02
 from __future__ import annotations
 
 import io
+import json
 import logging
 import unicodedata
+from difflib import SequenceMatcher
 from abc import ABC, abstractmethod
 from copy import copy
 from pathlib import Path
@@ -240,7 +242,16 @@ class FileConverter:
 
     def _load_structured_input(self, path: Path) -> pd.DataFrame:
         if path.suffix.lower() in {".xlsx", ".xls"}:
-            return pd.read_excel(path)
+            xl = pd.ExcelFile(path)
+            frames: List[pd.DataFrame] = []
+            for sheet_name in xl.sheet_names:
+                frame = xl.parse(sheet_name)
+                if len(xl.sheet_names) > 1:
+                    frame.insert(0, "Sheet_Source", sheet_name)
+                frames.append(frame)
+            if not frames:
+                raise EmptyFileError("Excel workbook has no readable sheets.")
+            return pd.concat(frames, ignore_index=True)
         return pd.read_csv(path)
 
     def _normalize_colname(self, name: str) -> str:
@@ -252,9 +263,9 @@ class FileConverter:
         normalized = {self._normalize_colname(col): col for col in df.columns}
         candidates = {
             "Date": ["date"],
-            "Heure": ["heure", "time"],
-            "Ramassage": ["ramassage", "pickup", "pickuplocation"],
-            "Destination": ["destination", "dropoff", "dropofflocation"],
+            "Heure": ["heure", "time", "heuredarrivee", "arrivaltime"],
+            "Ramassage": ["ramassage", "pickup", "pickuplocation", "adresse", "address"],
+            "Destination": ["destination", "dropoff", "dropofflocation", "site"],
             "Passenger": ["nomprenom", "passenger", "passagers", "name"],
         }
 
@@ -268,6 +279,14 @@ class FileConverter:
             resolved[field] = match
 
         return resolved
+
+    def _resolve_optional_column(self, df: pd.DataFrame, aliases: List[str]) -> Optional[str]:
+        normalized = {self._normalize_colname(col): col for col in df.columns}
+        for alias in aliases:
+            key = self._normalize_colname(alias)
+            if key in normalized:
+                return normalized[key]
+        return None
 
     def _remove_repeated_headers(self, df: pd.DataFrame) -> pd.DataFrame:
         if df.empty:
@@ -295,25 +314,45 @@ class FileConverter:
         return cleaned_df
 
     def _prepare_ml_dataframe(self, cleaned_df: pd.DataFrame) -> pd.DataFrame:
-        cols = self._resolve_required_columns(cleaned_df)
+        working_df = cleaned_df.copy()
+
+        # Training pipeline rule: only Matricule is dropped.
+        matricule_col = self._resolve_optional_column(working_df, ["matricule"])
+        if matricule_col is not None:
+            working_df = working_df.drop(columns=[matricule_col])
+
+        cols = self._resolve_required_columns(working_df)
+        operation_col = self._resolve_optional_column(working_df, ["operation"])
+        sheet_source_col = self._resolve_optional_column(working_df, ["sheet_source"])
 
         ml_df = pd.DataFrame({
-            "Date": cleaned_df[cols["Date"]],
-            "Heure": cleaned_df[cols["Heure"]],
-            "Ramassage": cleaned_df[cols["Ramassage"]],
-            "Destination": cleaned_df[cols["Destination"]],
-            "Nom - Prénom": cleaned_df[cols["Passenger"]],
+            "Date": working_df[cols["Date"]],
+            "Heure": working_df[cols["Heure"]],
+            "Ramassage": working_df[cols["Ramassage"]],
+            "Destination": working_df[cols["Destination"]],
+            "Nom - Prénom": working_df[cols["Passenger"]],
         }).copy()
 
-        for col in ["Ramassage", "Destination", "Nom - Prénom"]:
+        ml_df["Opération"] = (
+            working_df[operation_col] if operation_col is not None else ""
+        )
+        if sheet_source_col is not None:
+            ml_df["Sheet_Source"] = working_df[sheet_source_col].astype(str)
+
+        for col in ["Ramassage", "Destination", "Nom - Prénom", "Opération"]:
             ml_df[col] = ml_df[col].fillna("").astype(str).str.strip()
 
         ml_df["Date"] = pd.to_datetime(ml_df["Date"], errors="coerce")
         ml_df["Date"] = ml_df["Date"].fillna(pd.Timestamp("1970-01-01"))
 
-        ml_df["Heure"] = pd.to_datetime(ml_df["Heure"], errors="coerce").dt.time
-        ml_df["hour"] = pd.to_datetime(ml_df["Heure"].astype(str), errors="coerce").dt.hour
-        ml_df["hour"] = ml_df["hour"].fillna(0).astype(int)
+        time_features = self._extract_time_features(ml_df["Heure"])
+        ml_df["dispatch_time_key"] = time_features["time_key"]
+        ml_df["hour"] = time_features["hour"].fillna(0).astype(int)
+        ml_df["Heure"] = pd.to_datetime(
+            ml_df["dispatch_time_key"],
+            format="%H:%M",
+            errors="coerce",
+        ).dt.time
         ml_df["month"] = ml_df["Date"].dt.month
         ml_df["day_of_month"] = ml_df["Date"].dt.day
         ml_df["weekday"] = ml_df["Date"].dt.weekday
@@ -321,41 +360,122 @@ class FileConverter:
         ml_df["Ramassage_clean"] = ml_df["Ramassage"].str.lower()
         ml_df["Destination_clean"] = ml_df["Destination"].str.lower()
         ml_df["route"] = ml_df["Ramassage_clean"] + " > " + ml_df["Destination_clean"]
+        ml_df["operation_clean"] = ml_df["Opération"].str.lower()
         return ml_df
 
+    def _extract_time_features(self, heure_series: pd.Series) -> pd.DataFrame:
+        def parse_time_value(value) -> Tuple[float, str]:
+            if pd.isna(value):
+                return np.nan, "00:00"
+
+            if hasattr(value, "hour"):
+                hour = int(value.hour)
+                minute = int(getattr(value, "minute", 0) or 0)
+                if 0 <= hour <= 23 and 0 <= minute <= 59:
+                    return float(hour), f"{hour:02d}:{minute:02d}"
+                return np.nan, "00:00"
+
+            text = str(value).strip().lower()
+            match_hm = pd.Series(text).str.extract(r"(\d{1,2})\s*[:h]\s*(\d{1,2})", expand=True).iloc[0]
+            if match_hm.notna().all():
+                hour = int(match_hm[0])
+                minute = int(match_hm[1])
+                if 0 <= hour <= 23 and 0 <= minute <= 59:
+                    return float(hour), f"{hour:02d}:{minute:02d}"
+
+            match_h = pd.Series(text).str.extract(r"^(\d{1,2})", expand=False).iloc[0]
+            if pd.notna(match_h):
+                hour = int(match_h)
+                if 0 <= hour <= 23:
+                    return float(hour), f"{hour:02d}:00"
+
+            return np.nan, "00:00"
+
+        parsed = heure_series.apply(parse_time_value)
+        return pd.DataFrame({
+            "hour": parsed.apply(lambda t: t[0]),
+            "time_key": parsed.apply(lambda t: t[1]),
+        })
+
     def _build_geographic_clusters(self, ml_df: pd.DataFrame) -> np.ndarray:
-        ml_df["exact_route"] = ml_df["Ramassage"] + " -> " + ml_df["Destination"]
-        ml_df["dispatch_date"] = ml_df["Date"].dt.date
-        route_groups = (
-            ml_df.groupby(["exact_route", "dispatch_date", "hour"])
-            .size()
-            .sort_values(ascending=False)
-        )
+        working = ml_df.copy()
+        working["exact_route"] = working["Ramassage"] + " -> " + working["Destination"]
+        working["dispatch_date"] = working["Date"].dt.date
+        if "dispatch_time_key" not in working.columns:
+            working["dispatch_time_key"] = pd.to_datetime(
+                working["Heure"], errors="coerce"
+            ).dt.strftime("%H:%M").fillna("00:00")
 
         assignments: List[Tuple[int, int]] = []
         current_course_id = 0
 
-        # A course can only contain passengers that share route + day + hour.
-        for route, dispatch_date, hour in route_groups.index:
-            route_mask = (
-                (ml_df["exact_route"] == route)
-                & (ml_df["dispatch_date"] == dispatch_date)
-                & (ml_df["hour"] == hour)
-            )
-            route_indices = np.where(route_mask.values)[0]
-            sorted_indices = np.sort(route_indices)
+        # Group strictly by exact day + exact time.
+        time_groups = (
+            working.groupby(["dispatch_date", "dispatch_time_key"])
+            .indices
+        )
 
-            route_size = len(sorted_indices)
-            for i in range(0, route_size, 4):
-                course_indices = sorted_indices[i : min(i + 4, route_size)]
-                for passenger_idx in course_indices:
+        for _, index_array in sorted(time_groups.items(), key=lambda kv: (kv[0][0], kv[0][1])):
+            bucket_indices = sorted([int(i) for i in index_array])
+            route_to_indices: Dict[str, List[int]] = {}
+            for idx in bucket_indices:
+                route = str(working.iloc[idx]["exact_route"])
+                route_to_indices.setdefault(route, []).append(idx)
+
+            # Step 1: maximize full 4-seat courses on same exact route.
+            leftovers: Dict[str, List[int]] = {}
+            for route, indices in sorted(route_to_indices.items(), key=lambda item: (-len(item[1]), item[0])):
+                sorted_indices = sorted(indices)
+                full_cutoff = (len(sorted_indices) // 4) * 4
+                for i in range(0, full_cutoff, 4):
+                    for passenger_idx in sorted_indices[i : i + 4]:
+                        assignments.append((int(passenger_idx), int(current_course_id)))
+                    current_course_id += 1
+                if full_cutoff < len(sorted_indices):
+                    leftovers[route] = sorted_indices[full_cutoff:]
+
+            # Step 2: combine leftover passengers using route similarity, still at exact same time.
+            remaining = {route: list(indices) for route, indices in leftovers.items() if indices}
+            while sum(len(v) for v in remaining.values()) >= 4:
+                seed_route = max(remaining.keys(), key=lambda r: (len(remaining[r]), r))
+                course = [remaining[seed_route].pop(0)]
+                if not remaining[seed_route]:
+                    del remaining[seed_route]
+
+                while len(course) < 4 and remaining:
+                    candidate_routes = list(remaining.keys())
+                    candidate_route = max(
+                        candidate_routes,
+                        key=lambda r: (self._route_similarity(seed_route, r), len(remaining[r]), r),
+                    )
+                    course.append(remaining[candidate_route].pop(0))
+                    if not remaining[candidate_route]:
+                        del remaining[candidate_route]
+
+                for passenger_idx in course:
                     assignments.append((int(passenger_idx), int(current_course_id)))
                 current_course_id += 1
 
-        final_clusters = np.zeros(len(ml_df), dtype=int)
+            # Final residual (1-3 passengers) stays as one small course to minimize singletons.
+            residual = sorted([idx for indices in remaining.values() for idx in indices])
+            if residual:
+                for passenger_idx in residual:
+                    assignments.append((int(passenger_idx), int(current_course_id)))
+                current_course_id += 1
+
+        final_clusters = np.zeros(len(working), dtype=int)
         for passenger_idx, course_id in assignments:
             final_clusters[passenger_idx] = int(course_id)
         return final_clusters
+
+    def _route_similarity(self, route_a: str, route_b: str) -> float:
+        if route_a == route_b:
+            return 1.0
+        pickup_a, _, dropoff_a = route_a.partition(" -> ")
+        pickup_b, _, dropoff_b = route_b.partition(" -> ")
+        pickup_score = SequenceMatcher(None, pickup_a.lower(), pickup_b.lower()).ratio()
+        dropoff_score = SequenceMatcher(None, dropoff_a.lower(), dropoff_b.lower()).ratio()
+        return (0.65 * pickup_score) + (0.35 * dropoff_score)
 
     def _build_dispatch_outputs(
         self, ml_df: pd.DataFrame, clusters: np.ndarray
@@ -447,10 +567,11 @@ class FileConverter:
     ):
         if input_path.suffix.lower() in {".xlsx", ".xlsm"}:
             wb = openpyxl.load_workbook(input_path)
-            ws = wb.active
+            ws = wb[wb.sheetnames[0]]
             for sheet_name in list(wb.sheetnames):
                 if sheet_name != ws.title:
                     wb.remove(wb[sheet_name])
+            ws.title = "Agents par Taxi"
             ml_df = self._prepare_ml_dataframe(cleaned_df)
             self._render_template_layout(ws, cleaned_df, ml_df, clusters)
             wb.save(output_path)
@@ -619,6 +740,48 @@ class FileConverter:
                     return white_fill, orange_fill
 
         return white_fill, orange_fill
+
+    def export_training_artifacts(self, input_path: str, output_dir: str = "data") -> Dict[str, object]:
+        source_path = Path(input_path)
+        if not source_path.exists():
+            raise FileNotFoundError(f"File not found: {input_path}")
+
+        output_path = Path(output_dir)
+        output_path.mkdir(parents=True, exist_ok=True)
+
+        raw_df = self._load_structured_input(source_path)
+        cleaned_df = self._remove_repeated_headers(raw_df)
+        ml_df = self._prepare_ml_dataframe(cleaned_df)
+        clusters = self._build_geographic_clusters(ml_df)
+        dispatch_df, course_stats = self._build_dispatch_outputs(ml_df, clusters)
+
+        cleaned_csv = output_path / "taxi_data_cleaned.csv"
+        dispatch_csv = output_path / "final_course_dispatch_geographic.csv"
+        summary_csv = output_path / "course_summary_geographic.csv"
+        report_json = output_path / "model_training_report.json"
+
+        # Training export should only drop Matricule, matching the new rule.
+        export_cleaned_df = cleaned_df.copy()
+        matricule_col = self._resolve_optional_column(export_cleaned_df, ["matricule"])
+        if matricule_col is not None:
+            export_cleaned_df = export_cleaned_df.drop(columns=[matricule_col])
+
+        export_cleaned_df.to_csv(cleaned_csv, index=False)
+        dispatch_df.to_csv(dispatch_csv, index=False)
+        course_stats.to_csv(summary_csv)
+
+        report = {
+            "source_file": str(source_path),
+            "rows_raw": int(len(raw_df)),
+            "rows_cleaned": int(len(cleaned_df)),
+            "rows_training": int(len(ml_df)),
+            "courses_created": int(dispatch_df["Course_ID"].nunique()),
+            "max_passengers_per_course": int(dispatch_df.groupby("Course_ID").size().max()),
+            "features": ["hour", "month", "day_of_month", "weekday", "is_weekend", "route", "operation"],
+            "columns_cleaned_export": export_cleaned_df.columns.tolist(),
+        }
+        report_json.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+        return report
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  Example Execution

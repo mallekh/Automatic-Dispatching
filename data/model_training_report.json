@@ -1,0 +1,27 @@
+{
+  "source_file": "data\\Historique.xlsx",
+  "rows_raw": 22249,
+  "rows_cleaned": 20675,
+  "rows_training": 20675,
+  "courses_created": 5765,
+  "max_passengers_per_course": 4,
+  "features": [
+    "hour",
+    "month",
+    "day_of_month",
+    "weekday",
+    "is_weekend",
+    "route",
+    "operation"
+  ],
+  "columns_cleaned_export": [
+    "Sheet_Source",
+    "Date",
+    "Nom - Prénom",
+    "Opération",
+    "Site",
+    "Adresse",
+    "Heure d'arrivée",
+    "Taxi"
+  ]
+}
