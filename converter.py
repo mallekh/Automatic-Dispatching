@@ -11,6 +11,7 @@ import json
 import logging
 import unicodedata
 from difflib import SequenceMatcher
+import re
 from abc import ABC, abstractmethod
 from copy import copy
 from pathlib import Path
@@ -170,9 +171,13 @@ class FileConverter:
         ".txt": TextCSVParser,
     }
 
-    def __init__(self, trip_type: str = "ramassage"):
+    def __init__(self, trip_type: str = "ramassage", max_passengers: int = 4, similarity_threshold: float = 0.6):
         # Map input to display labels
         self.trip_label = "Ramassage" if trip_type.lower() == "ramassage" else "Retour"
+        # Tunable dispatch parameters (exposed to callers)
+        self.max_passengers = int(max_passengers)
+        # Similarity threshold used when grouping similar routes (0..1)
+        self.similarity_threshold = float(similarity_threshold)
 
     def convert(self, input_path: str, output_path: str) -> str:
         """Main entry point: Parse, Clean, and Export."""
@@ -411,8 +416,7 @@ class FileConverter:
 
         # Group strictly by exact day + exact time.
         time_groups = (
-            working.groupby(["dispatch_date", "dispatch_time_key"])
-            .indices
+            working.groupby(["dispatch_date", "dispatch_time_key"]).indices
         )
 
         for _, index_array in sorted(time_groups.items(), key=lambda kv: (kv[0][0], kv[0][1])):
@@ -422,44 +426,45 @@ class FileConverter:
                 route = str(working.iloc[idx]["exact_route"])
                 route_to_indices.setdefault(route, []).append(idx)
 
-            # Step 1: maximize full 4-seat courses on same exact route.
-            leftovers: Dict[str, List[int]] = {}
-            for route, indices in sorted(route_to_indices.items(), key=lambda item: (-len(item[1]), item[0])):
-                sorted_indices = sorted(indices)
-                full_cutoff = (len(sorted_indices) // 4) * 4
-                for i in range(0, full_cutoff, 4):
-                    for passenger_idx in sorted_indices[i : i + 4]:
-                        assignments.append((int(passenger_idx), int(current_course_id)))
-                    current_course_id += 1
-                if full_cutoff < len(sorted_indices):
-                    leftovers[route] = sorted_indices[full_cutoff:]
+            # Build courses by route similarity first, with a configurable max passengers.
+            remaining: Dict[str, List[int]] = {r: list(idxs) for r, idxs in route_to_indices.items() if idxs}
 
-            # Step 2: combine leftover passengers using route similarity, still at exact same time.
-            remaining = {route: list(indices) for route, indices in leftovers.items() if indices}
-            while sum(len(v) for v in remaining.values()) >= 4:
+            while any(len(v) for v in remaining.values()):
+                # Seed with the most frequent remaining route
                 seed_route = max(remaining.keys(), key=lambda r: (len(remaining[r]), r))
                 course = [remaining[seed_route].pop(0)]
                 if not remaining[seed_route]:
                     del remaining[seed_route]
 
-                while len(course) < 4 and remaining:
-                    candidate_routes = list(remaining.keys())
-                    candidate_route = max(
-                        candidate_routes,
-                        key=lambda r: (self._route_similarity(seed_route, r), len(remaining[r]), r),
-                    )
-                    course.append(remaining[candidate_route].pop(0))
-                    if not remaining[candidate_route]:
-                        del remaining[candidate_route]
+                # Agglomeratively add the best-matching passengers while respecting max_passengers
+                while len(course) < self.max_passengers and remaining:
+                    best_route = None
+                    best_score = -1.0
 
+                    # Evaluate candidate routes: choose the one with best conservative similarity
+                    for candidate_route in list(remaining.keys()):
+                        # compute similarity to all route strings already in the course
+                        course_route_strings = [str(working.iloc[i]["exact_route"]) for i in course]
+                        sims = [self._route_similarity(cr, candidate_route) for cr in course_route_strings]
+                        # use the minimum similarity to ensure mutual cohesion
+                        score = min(sims) if sims else 0.0
+                        if score >= self.similarity_threshold and (
+                            score > best_score
+                            or (score == best_score and len(remaining[candidate_route]) > len(remaining.get(best_route or "", [])))
+                        ):
+                            best_score = score
+                            best_route = candidate_route
+
+                    if best_route is None:
+                        break
+
+                    # add a single passenger from the selected best_route
+                    course.append(remaining[best_route].pop(0))
+                    if not remaining[best_route]:
+                        del remaining[best_route]
+
+                # finalize course: assign course id to all passenger indices
                 for passenger_idx in course:
-                    assignments.append((int(passenger_idx), int(current_course_id)))
-                current_course_id += 1
-
-            # Final residual (1-3 passengers) stays as one small course to minimize singletons.
-            residual = sorted([idx for indices in remaining.values() for idx in indices])
-            if residual:
-                for passenger_idx in residual:
                     assignments.append((int(passenger_idx), int(current_course_id)))
                 current_course_id += 1
 
@@ -471,11 +476,24 @@ class FileConverter:
     def _route_similarity(self, route_a: str, route_b: str) -> float:
         if route_a == route_b:
             return 1.0
+
         pickup_a, _, dropoff_a = route_a.partition(" -> ")
         pickup_b, _, dropoff_b = route_b.partition(" -> ")
+
+        def tokens(s: str) -> set:
+            return set(re.findall(r"\w+", str(s).lower()))
+
+        tokens_a = tokens(pickup_a + " " + dropoff_a)
+        tokens_b = tokens(pickup_b + " " + dropoff_b)
+        jaccard = len(tokens_a & tokens_b) / max(1, len(tokens_a | tokens_b))
+
         pickup_score = SequenceMatcher(None, pickup_a.lower(), pickup_b.lower()).ratio()
         dropoff_score = SequenceMatcher(None, dropoff_a.lower(), dropoff_b.lower()).ratio()
-        return (0.65 * pickup_score) + (0.35 * dropoff_score)
+
+        # Combine token overlap (Jaccard) with sequence-based scores.
+        # Token overlap gets higher weight to capture route pattern similarity.
+        score = 0.5 * jaccard + 0.3 * pickup_score + 0.2 * dropoff_score
+        return float(score)
 
     def _build_dispatch_outputs(
         self, ml_df: pd.DataFrame, clusters: np.ndarray

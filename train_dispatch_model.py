@@ -21,12 +21,26 @@ def parse_args() -> argparse.Namespace:
         default="data",
         help="Directory where training artifacts will be exported (default: data).",
     )
+    parser.add_argument(
+        "--max-passengers",
+        type=int,
+        default=4,
+        help="Maximum passengers per course (default: 4).",
+    )
+    parser.add_argument(
+        "--similarity-threshold",
+        type=float,
+        default=0.6,
+        help="Similarity threshold for grouping routes (0..1, default: 0.6).",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    converter = FileConverter()
+    converter = FileConverter(
+        max_passengers=args.max_passengers, similarity_threshold=args.similarity_threshold
+    )
     report = converter.export_training_artifacts(args.input, args.output_dir)
 
     print("Training completed.")
