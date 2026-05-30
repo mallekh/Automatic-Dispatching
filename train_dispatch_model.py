@@ -38,6 +38,12 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    input_path = Path(args.input)
+    if input_path.name.lower() != "historique.xlsx":
+        raise ValueError(
+            "Training artifacts may only be generated from Historique.xlsx. "
+            "Use the official historical workbook as the valid training dataset."
+        )
     converter = FileConverter(
         max_passengers=args.max_passengers, similarity_threshold=args.similarity_threshold
     )

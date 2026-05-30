@@ -1,18 +1,25 @@
 {
   "source_file": "data\\Historique.xlsx",
   "rows_raw": 22249,
-  "rows_cleaned": 20675,
-  "rows_training": 20675,
-  "courses_created": 5765,
+  "rows_cleaned": 22249,
+  "rows_training": 22249,
+  "courses_created": 7155,
   "max_passengers_per_course": 4,
+  "avg_passengers_per_course": 3.1095737246680644,
+  "zone_count": 11,
+  "zone_split_rate": 0.30004943153732083,
+  "zone_courses_ratio": 1.768413247652002,
+  "zone_purity": 1.0,
+  "label_coverage": 1.0,
   "features": [
     "hour",
     "month",
     "day_of_month",
     "weekday",
     "is_weekend",
-    "route",
-    "operation"
+    "Ramassage_normalized",
+    "zone_id",
+    "zone_name"
   ],
   "columns_cleaned_export": [
     "Sheet_Source",
