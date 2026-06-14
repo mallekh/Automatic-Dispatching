@@ -5,3 +5,6 @@ build/
 
 # Safety: never push generated executables
 *.exe
+
+# Custom
+Historique_with_zones.xlsx

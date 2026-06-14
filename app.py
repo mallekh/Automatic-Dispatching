@@ -57,10 +57,14 @@ class ConverterApp:
         else:
             self.app = ctk.CTk()
 
-        self.converter = FileConverter()
         self.current_lang = "FR"
         self.trip_type_var = ctk.StringVar()
         self.selected_file = None
+
+        # The converter is loaded once and reused for every conversion.
+        # Loading here would block the window from appearing, so we load it
+        # lazily on the first conversion click via _get_converter().
+        self._converter: "FileConverter | None" = None
 
         self.app.title("Converter Pro v2.0")
         
@@ -231,13 +235,44 @@ class ConverterApp:
         self.selected_file = path
         self._load_preview(path)
 
+    def _get_converter(self) -> "FileConverter":
+        """Return the shared FileConverter instance, loading it on the first call.
+
+        The sentence-transformer model (~274 MB) is expensive to load.
+        By deferring to the first click and caching afterwards, the UI
+        appears instantly while the model loads only once per session.
+        """
+        if self._converter is None:
+            self.btn_convert.configure(text="Chargement du modèle…", state="disabled")
+            self.app.update_idletasks()
+            self._converter = FileConverter()
+            # Restore the button label after loading.
+            t = LANGUAGES[self.current_lang]
+            self.btn_convert.configure(text=t["btn_convert"], state="normal")
+        return self._converter
+
     def _handle_conversion(self):
         t = LANGUAGES[self.current_lang]
-        save_path = filedialog.asksaveasfilename(defaultextension=".xlsx", initialfile=f"{Path(self.selected_file).stem}_export.xlsx")
-        if not save_path: return
+        
+        # 1. Determine trip type label (cosmetic — does not affect ML pipeline).
+        trip_type = "ramassage" if self.trip_type_var.get() == "Ramassage" else "retour"
+        
+        # 2. Retrieve the shared converter; instantiate on first call only.
+        converter = self._get_converter()
+        converter.trip_label = "Ramassage" if trip_type == "ramassage" else "Retour"
+        
+        # 3. Proceed with conversion
+        save_path = filedialog.asksaveasfilename(
+            defaultextension=".xlsx", 
+            initialfile=f"{Path(self.selected_file).stem}_export.xlsx"
+        )
+        if not save_path: 
+            return
+            
         try:
-            self.converter.convert_dispatch_ml(self.selected_file, save_path)
-            messagebox.showinfo("Succès", t["complete"])
+            # Call the Deep Learning dispatch method on the cached converter.
+            msg = converter.convert_dispatch_ml(self.selected_file, save_path)
+            messagebox.showinfo("Succès", f"{t['complete']}\n\n{msg}")
             self._reset_ui_after_work()
         except Exception as e:
             messagebox.showerror("Erreur", str(e))
@@ -258,5 +293,3 @@ class ConverterApp:
 if __name__ == "__main__":
     app = ConverterApp()
     app.run()
-
-
